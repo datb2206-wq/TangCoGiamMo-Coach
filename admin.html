@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Trang quản lý | Khách đăng ký</title>
+  <title>Trang quản lý | TangCoGiamMo-Coach</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23131719'/%3E%3Cpath d='M6 18c0-7 4-11 12-12-.5 8-4.5 12-12 12Zm0 0 6-6' fill='%23a3cb4c' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,7 +45,7 @@
   <section id="loginView" class="grid min-h-screen place-items-center p-4">
     <form id="loginForm" class="card w-full max-w-sm space-y-4 p-8">
       <div>
-        <p class="text-2xl font-bold text-heading">Fit<span class="text-leaf">Coach</span> <span class="text-base font-medium text-gray-400">Quản lý</span></p>
+        <p class="text-2xl font-bold text-heading">TangCo<span class="text-primary">GiamMo</span><span class="text-leaf">-Coach</span> <span class="text-base font-medium text-gray-400">Quản lý</span></p>
         <p class="mt-1">Trang quản lý khách đăng ký, chỉ dành cho chủ web.</p>
       </div>
       <div>
@@ -68,7 +68,7 @@
   <div id="appView" class="hidden min-h-screen">
     <header class="sticky top-0 z-20 bg-dark text-white">
       <div class="mx-auto flex min-h-14 max-w-7xl flex-wrap items-center gap-x-3 gap-y-1 px-4 py-2">
-        <p class="text-lg font-bold">Fit<span class="text-leaf">Coach</span> <span class="text-sm font-medium text-white/50">Quản lý</span></p>
+        <p class="text-lg font-bold">TangCo<span class="text-sky-300">GiamMo</span><span class="text-leaf">-Coach</span> <span class="text-sm font-medium text-white/50">Quản lý</span></p>
         <span id="demoBadge" class="badge hidden bg-leaf text-dark">CHẾ ĐỘ THỬ</span>
         <nav class="order-last flex w-full gap-1 md:order-none md:ml-2 md:w-auto" aria-label="Mục quản lý">
           <button type="button" data-tab="leads" class="tab btn px-3 py-1.5 text-white/70 hover:text-white">👥 Khách đăng ký</button>
@@ -329,7 +329,7 @@
         return lines.join("\n");
       },
       en(l, m, f) {
-        const lines = [`Hi ${f.first}! Thanks for signing up with FitCoach. Based on the details you shared, here is a suggested starting plan:`, ""];
+        const lines = [`Hi ${f.first}! Thanks for signing up with TangCoGiamMo-Coach. Based on the details you shared, here is a suggested starting plan:`, ""];
         lines.push("📊 Where you are now", `- BMI: ${f.d1(m.bmi)} (${f.cat})`, `- Daily energy expenditure (TDEE): about ${f.n(m.tdee)} kcal`, "");
         lines.push("🎯 Your target");
         if (m.mode === "loss" || m.mode === "gentle") {
@@ -355,7 +355,7 @@
         return lines.join("\n");
       },
       zh(l, m, f) {
-        const lines = [`${f.first}你好！感谢你报名FitCoach。根据你提供的信息，我为你准备了一份入门建议：`, ""];
+        const lines = [`${f.first}你好！感谢你报名TangCoGiamMo-Coach。根据你提供的信息，我为你准备了一份入门建议：`, ""];
         lines.push("📊 目前情况", `- BMI：${f.d1(m.bmi)}（${f.cat}）`, `- 每日总能量消耗（TDEE）：约${f.n(m.tdee)}千卡`, "");
         lines.push("🎯 目标");
         if (m.mode === "loss" || m.mode === "gentle") {

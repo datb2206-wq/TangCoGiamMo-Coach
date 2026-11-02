@@ -11,7 +11,7 @@
 import { hasStore, listPosts } from "./_lib/store.js";
 import { esc, postText, postSlug, postImageUrl, renderBlocks, autoExcerpt, readingMinutes } from "./_lib/blog.js";
 
-const SITE_NAME = "FitCoach – PT Online Giảm Cân";
+const SITE_NAME = "TangCoGiamMo-Coach – PT Online Giảm Mỡ Tăng Cơ";
 const fmtDate = (d) => new Date(d).toLocaleDateString("vi-VN", { day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Ho_Chi_Minh" });
 
 export default async function handler(req, res) {
@@ -89,12 +89,12 @@ function layout({ title, description, canonical, image, type = "website", jsonLd
 <body class="bg-white">
   <header class="sticky top-0 z-50 border-b border-gray-100 bg-white/95 backdrop-blur">
     <div class="container-x flex h-16 items-center justify-between gap-3">
-      <a href="/" class="text-[24px] font-bold leading-none tracking-tight text-heading">Fit<span class="text-leaf">Coach</span></a>
+      <a href="/" class="whitespace-nowrap text-[18px] font-bold leading-none tracking-tight text-heading sm:text-[22px]">TangCo<span class="text-primary">GiamMo</span><span class="text-leaf">-Coach</span></a>
       <nav class="flex items-center gap-4 text-[15px] font-medium sm:gap-6">
         <a href="/kien-thuc" class="hidden text-gray-600 hover:text-primary sm:inline">Kiến thức</a>
         <a href="/#tinh-calo" class="hidden text-gray-600 hover:text-primary md:inline">Tính Calo</a>
         <a href="/#bang-gia" class="hidden text-gray-600 hover:text-primary md:inline">Bảng Giá</a>
-        <a href="/#kham" class="btn-primary px-4 py-2.5 text-sm">🎁 Nhận 3 Ngày Miễn Phí</a>
+        <a href="/#kham" class="btn-primary whitespace-nowrap px-3 py-2.5 text-sm sm:px-4">🎁 <span class="sm:hidden">Miễn Phí</span><span class="hidden sm:inline">Nhận 3 Ngày Miễn Phí</span></a>
       </nav>
     </div>
   </header>
@@ -104,7 +104,7 @@ function layout({ title, description, canonical, image, type = "website", jsonLd
   <footer class="mt-16 bg-dark pb-28 pt-10 text-sm text-white/60 lg:pb-10">
     <div class="container-x flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       <div>
-        <p class="text-xl font-bold text-white">Fit<span class="text-leaf">Coach</span></p>
+        <p class="text-xl font-bold text-white">TangCo<span class="text-sky-300">GiamMo</span><span class="text-leaf">-Coach</span></p>
         <p class="mt-1"><span data-pt-name>PT</span> · PT Online giảm cân: ăn sạch đúng lượng, tập nhẹ đúng cách.</p>
       </div>
       <div class="flex gap-5">

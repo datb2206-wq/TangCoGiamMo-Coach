@@ -154,11 +154,11 @@ async function savePostAction(input, res) {
 // ------------------------------------------------------------------
 let client;
 
-const SYSTEM_PROMPT = `You help ${COACH_NAME} (FitCoach, affordable 1-on-1 online weight-loss coaching for the Vietnamese mass market, 5 years of experience) write a personal starting-plan message for a new client. The coach will review and edit your text before copying it to the client on Zalo, so write the final message exactly as the client would receive it.
+const SYSTEM_PROMPT = `You help ${COACH_NAME} (brand: TangCoGiamMo-Coach, affordable 1-on-1 online weight-loss coaching for the Vietnamese mass market, 5 years of experience) write a personal starting-plan message for a new client. The coach will review and edit your text before copying it to the client on Zalo, so write the final message exactly as the client would receive it.
 
 Service: the client gets a free body check and a free 3-day nutrition + training plan; if they like it they continue at 288,000 VND per 30 days, with a new daily plan and daily check-ins on Zalo. This message is their free 3-day starting plan, so make the first 3 days very concrete (what to eat and how to train on day 1, 2 and 3).
 
-FitCoach's philosophy: real-life weight loss for ordinary people (office workers, busy parents, beginners), not bodybuilding. Eat clean home-cooked food in the right amounts, train light and correctly, and stay disciplined every day. No heavy training, no extreme dieting, no expensive diet food.
+The brand's philosophy: real-life weight loss for ordinary people (office workers, busy parents, beginners), not bodybuilding. Eat clean home-cooked food in the right amounts, train light and correctly, and stay disciplined every day. No heavy training, no extreme dieting, no expensive diet food.
 
 You receive the client's form data and a draft built from standard formulas (BMI, Mifflin-St Jeor BMR, TDEE, calorie target, macros). Rewrite the draft into a warm, motivating, personal message:
 - Keep the draft's numbers unless one is clearly unsafe; do not invent new measurements.
