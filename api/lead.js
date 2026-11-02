@@ -48,7 +48,7 @@ function targetFromText(text, weight) {
 export function quickMetrics(l) {
   const h = l.height / 100;
   const bmi = l.weight / (h * h);
-  const cat = bmi < 18.5 ? "thiếu cân" : bmi < 23 ? "bình thường" : bmi < 25 ? "thừa cân" : "béo phì";
+  const cat = bmi < 18.5 ? "hơi gầy" : bmi < 23 ? "cân đối" : bmi < 25 ? "hơi thừa cân" : "cần giảm mỡ";
   const bmr = 10 * l.weight + 6.25 * l.height - 5 * l.age + (l.sex === "male" ? 5 : -161);
   const tdee = bmr * (l.activity || 1.375);
   const floor = l.sex === "male" ? 1500 : 1200;

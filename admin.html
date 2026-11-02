@@ -276,7 +276,7 @@
     // Chuẩn BMI châu Á (giống công cụ tính calo trên trang chủ): <18.5, 18.5–22.9, 23–24.9, ≥25
     const bmiCategory = (bmi, lang) => {
       const i = bmi < 18.5 ? 0 : bmi < 23 ? 1 : bmi < 25 ? 2 : 3;
-      return { vi: ["thiếu cân", "bình thường", "thừa cân", "béo phì"], en: ["underweight", "healthy range", "overweight", "obesity"], zh: ["偏瘦", "正常", "超重", "肥胖"] }[lang][i];
+      return { vi: ["hơi gầy", "cân đối", "hơi thừa cân", "cần giảm mỡ"], en: ["underweight", "healthy range", "overweight", "obesity"], zh: ["偏瘦", "正常", "超重", "肥胖"] }[lang][i];
     };
 
     /* ============================ LỜI KHUYÊN TỰ ĐỘNG ============================ */

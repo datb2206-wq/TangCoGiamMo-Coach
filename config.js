@@ -59,6 +59,22 @@ window.SITE_CONFIG = {
         ],
         cta: "Đăng Ký Gói 30 Ngày",
       },
+      {
+        id: "90-ngay",
+        name: "Combo Kỷ Luật 90 Ngày",
+        badge: "TIẾT KIỆM 165.000Đ",
+        oldPrice: 864000, // = 3 x 288.000đ, hiện gạch ngang để thấy phần tiết kiệm
+        price: 699000,
+        unit: "/ 90 ngày",
+        days: 90,
+        features: [
+          "Toàn bộ quyền lợi gói 30 ngày, trọn 90 ngày",
+          "Lộ trình dài hơi cho mục tiêu giảm 5–8kg",
+          "Đổi mới thực đơn, lịch tập theo từng giai đoạn để chống chững cân",
+          "Hướng dẫn cách tự giữ dáng sau khi kết thúc gói",
+        ],
+        cta: "Đăng Ký Combo 90 Ngày",
+      },
     ],
   },
 
@@ -69,15 +85,7 @@ window.SITE_CONFIG = {
    *   who            : "Nam" / "Nữ"                    images : 1 hoặc nhiều góc chụp (mỗi góc 1 ảnh ghép trước–sau)
    * Ảnh chụp màn hình tin nhắn Zalo học viên báo cáo: { type: "zalo", image: "images/ket-qua/zalo-1.webp", caption: "Báo cáo bữa trưa ngày 12" }
    */
-  RESULTS: [
-    { who: "Nam", before: 86.2, after: 80.4, time: "36 buổi", images: [
-      { src: "images/ket-qua/nam-862-804-36buoi-truoc.webp", label: "Chính diện" },
-      { src: "images/ket-qua/nam-862-804-36buoi-nghieng.webp", label: "Nghiêng" },
-    ] },
-    { who: "Nam", before: 69.3, after: 63.7, time: "3 tháng", images: [{ src: "images/ket-qua/nam-693-637-3thang.webp", label: "Nghiêng" }] },
-    { who: "Nữ", before: 56.7, after: 52.2, time: "40 buổi", images: [{ src: "images/ket-qua/nu-567-522-40buoi.webp", label: "Nghiêng" }] },
-    { who: "Nữ", before: 63, after: 60, time: "15 buổi", images: [{ src: "images/ket-qua/nu-63-60-15buoi.webp", label: "Chính diện" }] },
-    { who: "Nữ", before: 55, after: 52, time: "3 tháng", images: [{ src: "images/ket-qua/nu-55-52-3thang.webp", label: "Chính diện" }] },
-    { who: "Nữ", before: 57, after: 54.5, time: "16 buổi", images: [{ src: "images/ket-qua/nu-57-545-16buoi.webp", label: "Chính diện" }] },
-  ],
+  // ⚠️ CHỈ dùng ảnh của học viên do chính PT kèm, đã xin phép và che mặt. Không dùng ảnh lấy từ nơi khác.
+  // Danh sách trống = mục "Kết quả học viên" tự ẩn (trang vẫn có mục Cam kết).
+  RESULTS: [],
 };

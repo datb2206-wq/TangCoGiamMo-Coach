@@ -35,6 +35,9 @@
   /* Lựa chọn dạng thẻ (nơi tập) trong Phiếu Khám */
   .choice { @apply flex min-h-[3rem] cursor-pointer items-center gap-3 rounded-lg border border-gray-200 bg-white px-4 py-3 text-[15px] text-heading transition hover:border-primary has-[:checked]:border-primary has-[:checked]:bg-primary-light has-[:checked]:font-semibold has-[:checked]:text-primary-dark; }
 
+  /* Nút chọn 1 chạm (giới tính, số buổi, thói quen ăn uống) */
+  .pill { @apply flex min-h-[3rem] cursor-pointer items-center justify-center gap-1.5 rounded-xl border-2 border-gray-200 bg-white px-3 py-2.5 text-center text-[15px] font-medium leading-snug text-heading transition hover:border-primary has-[:checked]:border-primary has-[:checked]:bg-primary has-[:checked]:text-white has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-primary/40; }
+
   .float-chat { @apply relative grid place-items-center rounded-full text-white shadow-lg ring-4 ring-white transition hover:scale-105; }
 }
 
