@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin.html
 Disallow: /api/
 
-Sitemap: https://fitcoach-azure.vercel.app/sitemap.xml
+Sitemap: https://tangcogiammo.com/sitemap.xml

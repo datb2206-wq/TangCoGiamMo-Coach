@@ -7,6 +7,10 @@
  *        **chữ đậm**           (cách 1 dòng trống để xuống đoạn)
  */
 
+// Tên miền chính của web: dùng cho đường dẫn gốc (canonical), sitemap, ảnh chia sẻ Facebook.
+// Đổi tên miền: sửa ở đây, hoặc đặt biến môi trường SITE_URL trên Vercel.
+export const SITE_URL = (process.env.SITE_URL || "https://tangcogiammo.com").replace(/\/+$/, "");
+
 export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
 export function slugify(text) {

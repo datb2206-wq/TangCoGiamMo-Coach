@@ -9,14 +9,13 @@
  * Số Zalo, tên PT, Meta Pixel lấy từ /config.js (giống trang chủ).
  */
 import { hasStore, listPosts } from "./_lib/store.js";
-import { esc, postText, postSlug, postImageUrl, renderBlocks, autoExcerpt, readingMinutes } from "./_lib/blog.js";
+import { SITE_URL, esc, postText, postSlug, postImageUrl, renderBlocks, autoExcerpt, readingMinutes } from "./_lib/blog.js";
 
 const SITE_NAME = "TangCoGiamMo-Coach – PT Online Giảm Mỡ Tăng Cơ";
 const fmtDate = (d) => new Date(d).toLocaleDateString("vi-VN", { day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Ho_Chi_Minh" });
 
 export default async function handler(req, res) {
-  const host = req.headers["x-forwarded-host"] || req.headers.host;
-  const origin = `https://${host}`;
+  const origin = SITE_URL; // luôn dùng tên miền chính, kể cả khi mở qua địa chỉ .vercel.app
   const slug = String(req.query?.slug || "").toLowerCase();
 
   let posts = [];

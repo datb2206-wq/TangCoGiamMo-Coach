@@ -3,10 +3,10 @@
  * Tự cập nhật khi admin đăng / sửa bài.
  */
 import { hasStore, listPosts } from "./_lib/store.js";
-import { postSlug } from "./_lib/blog.js";
+import { SITE_URL, postSlug } from "./_lib/blog.js";
 
 export default async function handler(req, res) {
-  const origin = `https://${req.headers["x-forwarded-host"] || req.headers.host}`;
+  const origin = SITE_URL;
   let posts = [];
   try {
     if (hasStore()) posts = await listPosts({ publishedOnly: true, limit: 300 });
