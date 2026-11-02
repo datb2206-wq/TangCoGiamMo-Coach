@@ -116,6 +116,8 @@ export default async function handler(req, res) {
     advice: "",
   };
   lead.target = targetFromText(lead.goalText, lead.weight);
+  // Mục tiêu có "tăng cơ / cơ bắp / săn chắc" -> trang quản lý gợi ý theo hướng giảm mỡ + tăng cơ
+  if (/tăng cơ|cơ bắp|săn chắc/i.test(lead.goalText)) lead.goalIdx = 2;
   lead.goal = lead.goalText;
 
   if (lead.name.length < 2 || !/^0\d{9}$/.test(lead.contact) || !lead.age || !lead.height || !lead.weight || !lead.place) {
