@@ -3,7 +3,7 @@
  * để tạo lại file assets/site.css (trang chủ dùng file CSS dựng sẵn này cho nhanh, không dùng CDN).
  */
 module.exports = {
-  content: ["./index.html", "./config.js"],
+  content: ["./index.html", "./config.js", "./api/**/*.js"], // api/article.js: trang bài viết dùng chung CSS
   theme: {
     extend: {
       fontFamily: {

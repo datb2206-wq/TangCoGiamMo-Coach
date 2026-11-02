@@ -5,7 +5,7 @@
  *   POST /api/admin { action: "save", id, advice, status }
  *   POST /api/admin { action: "delete", id }
  *   POST /api/admin { action: "ai", id, draft, lang } -> { text }  (viết lại bằng AI, KHÔNG bắt buộc)
- *   POST /api/admin { action: "post-save", post }   -> { post }   (tạo / sửa bài đăng Blog)
+ *   POST /api/admin { action: "post-save", post }   -> { post }   (tạo / sửa bài viết mục "Kiến thức", tự tạo đường dẫn /kien-thuc/<slug>)
  *   POST /api/admin { action: "post-delete", id }
  *
  * Mọi request phải gửi header "x-admin-email" và "x-admin-password".
@@ -19,6 +19,7 @@ import { createHash, timingSafeEqual } from "node:crypto";
 import Anthropic from "@anthropic-ai/sdk";
 import { randomUUID } from "node:crypto";
 import { hasStore, listLeads, getLead, updateLead, deleteLead, isLeadId, listPosts, getPost, savePost, deletePost } from "./_lib/store.js";
+import { slugify, postSlug } from "./_lib/blog.js";
 
 const MODEL = process.env.CLAUDE_MODEL || "claude-opus-5-5";
 const LANGUAGE_NAMES = { vi: "Vietnamese", en: "English", zh: "Simplified Chinese" };
@@ -127,11 +128,17 @@ async function savePostAction(input, res) {
 
   const existing = isLeadId(input.id) ? await getPost(input.id) : null;
   const now = new Date().toISOString();
+
+  // Đường dẫn chuẩn SEO /kien-thuc/<slug>: admin tự nhập, hoặc tạo từ tiêu đề; không trùng với bài khác
+  const others = (await listPosts({ limit: 300 })).filter((p) => p.id !== existing?.id).map(postSlug);
+  let slug = slugify(text(input.slug, 120)) || existing?.slug || slugify(i18n.vi?.title || Object.values(i18n)[0].title) || "bai-viet";
+  for (let n = 2, base = slug; others.includes(slug); n++) slug = `${base}-${n}`;
   const status = input.status === "published" ? "published" : "draft";
   const post = {
     id: existing?.id || randomUUID(),
     status,
     pinned: Boolean(input.pinned),
+    slug,
     image,
     i18n,
     createdAt: existing?.createdAt || now,

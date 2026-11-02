@@ -72,7 +72,7 @@
         <span id="demoBadge" class="badge hidden bg-leaf text-dark">CHẾ ĐỘ THỬ</span>
         <nav class="order-last flex w-full gap-1 md:order-none md:ml-2 md:w-auto" aria-label="Mục quản lý">
           <button type="button" data-tab="leads" class="tab btn px-3 py-1.5 text-white/70 hover:text-white">👥 Khách đăng ký</button>
-          <button type="button" data-tab="posts" class="tab btn px-3 py-1.5 text-white/70 hover:text-white">📝 Bài đăng</button>
+          <button type="button" data-tab="posts" class="tab btn px-3 py-1.5 text-white/70 hover:text-white">📝 Kiến thức (Blog)</button>
         </nav>
         <div class="ml-auto flex items-center gap-2">
           <a id="viewSiteBtn" href="index.html" target="_blank" rel="noopener" class="btn bg-leaf text-dark hover:bg-leaf-dark hover:text-white">🌐 Xem web</a>
@@ -122,11 +122,14 @@
     <main id="postsView" class="mx-auto max-w-7xl gap-4 p-4 lg:grid lg:grid-cols-[320px_1fr]" style="display: none">
       <aside class="card mb-4 flex max-h-[calc(100vh-6rem)] flex-col p-0 lg:sticky lg:top-[4.5rem] lg:mb-0">
         <div class="flex items-center justify-between gap-2 border-b border-gray-100 p-4">
-          <p class="font-semibold text-heading">Bài đăng</p>
-          <button id="newPostBtn" type="button" class="btn-primary px-3 py-1.5 text-xs">＋ Bài mới</button>
+          <p class="font-semibold text-heading">Bài viết</p>
+          <div class="flex gap-1.5">
+            <button id="samplePostsBtn" type="button" class="btn-ghost px-2.5 py-1.5 text-xs" title="Thêm 3 bài viết mẫu về dinh dưỡng & tập luyện (dạng nháp)">📥 3 bài mẫu</button>
+            <button id="newPostBtn" type="button" class="btn-primary px-3 py-1.5 text-xs">＋ Bài mới</button>
+          </div>
         </div>
         <ul id="postList" class="flex-1 divide-y divide-gray-100 overflow-y-auto"></ul>
-        <p class="border-t border-gray-100 p-3 text-xs">Trang chủ hiện <b>3 bài đã đăng</b> mới nhất ở mục Blog (bài ghim 📌 luôn đứng trước).</p>
+        <p class="border-t border-gray-100 p-3 text-xs">Mỗi bài có trang riêng <b>/kien-thuc/…</b> (Google đọc được). Trang chủ hiện <b>3 bài đã đăng</b> mới nhất (bài ghim 📌 luôn đứng trước). Danh sách đầy đủ: <a href="/kien-thuc" target="_blank" class="text-primary">/kien-thuc ↗</a></p>
       </aside>
 
       <section class="card min-w-0 space-y-5">
@@ -160,21 +163,29 @@
           <div class="space-y-3 pt-4">
             <div>
               <label for="postTitle" class="mb-1 block font-medium text-heading">Tiêu đề</label>
-              <input id="postTitle" maxlength="200" class="field" placeholder="VD: 5 bài tập đốt mỡ bụng tại nhà" />
+              <input id="postTitle" maxlength="200" class="field" placeholder="VD: 1 bát cơm bao nhiêu calo? Ăn cơm vẫn giảm cân" />
             </div>
             <div>
-              <label for="postExcerpt" class="mb-1 block font-medium text-heading">Tóm tắt <span class="font-normal text-gray-400">(hiện trên thẻ bài ở trang chủ, 1–2 câu)</span></label>
+              <label for="postSlug" class="mb-1 block font-medium text-heading">Đường dẫn bài viết <span class="font-normal text-gray-400">(tự tạo từ tiêu đề, không dấu – có thể sửa)</span></label>
+              <div class="flex items-center overflow-hidden rounded-md border border-gray-200 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20">
+                <span class="whitespace-nowrap bg-light px-3 py-2 text-xs text-gray-500">/kien-thuc/</span>
+                <input id="postSlug" maxlength="120" class="w-full px-2 py-2 text-sm text-heading outline-none" placeholder="1-bat-com-bao-nhieu-calo" />
+              </div>
+            </div>
+            <div>
+              <label for="postExcerpt" class="mb-1 block font-medium text-heading">Tóm tắt <span class="font-normal text-gray-400">(1–2 câu, hiện trên thẻ bài và trên Google; để trống thì tự lấy đầu bài)</span></label>
               <textarea id="postExcerpt" rows="2" maxlength="400" class="field"></textarea>
             </div>
             <div>
-              <label for="postContent" class="mb-1 block font-medium text-heading">Nội dung đầy đủ <span class="font-normal text-gray-400">(hiện khi khách bấm “Đọc tiếp”; cách 1 dòng trống để xuống đoạn)</span></label>
-              <textarea id="postContent" rows="12" class="field leading-relaxed"></textarea>
+              <label for="postContent" class="mb-1 block font-medium text-heading">Nội dung bài viết</label>
+              <textarea id="postContent" rows="16" class="field leading-relaxed" placeholder="Cách 1 dòng trống để xuống đoạn.&#10;&#10;## Tiêu đề mục&#10;&#10;- Gạch đầu dòng&#10;- Gạch đầu dòng&#10;&#10;**Chữ đậm** ở giữa câu."></textarea>
+              <p class="mt-1 text-xs text-gray-500">Cách viết: <code>## Tiêu đề mục</code> · <code>- gạch đầu dòng</code> · <code>1. danh sách số</code> · <code>**chữ đậm**</code> · cách 1 dòng trống để xuống đoạn. Khung “🎁 Nhận 3 ngày miễn phí” tự chèn vào giữa và cuối bài.</p>
             </div>
-            <p class="text-xs text-gray-400">Viết bằng tiếng Việt. Bấm “🚀 Đăng lên web” là bài hiện ở mục Blog trên trang chủ sau khoảng 30 giây.</p>
+            <p class="text-xs text-gray-400">Bấm “🚀 Đăng lên web”: bài lên trang riêng /kien-thuc/… và trang chủ sau khoảng 1–5 phút.</p>
           </div>
         </div>
 
-        <label class="flex items-center gap-2 text-heading"><input id="postPinned" type="checkbox" class="h-4 w-4 accent-primary" /> 📌 Ghim lên đầu mục Blog</label>
+        <label class="flex items-center gap-2 text-heading"><input id="postPinned" type="checkbox" class="h-4 w-4 accent-primary" /> 📌 Ghim lên đầu (luôn hiện ở trang chủ)</label>
 
         <div class="flex flex-wrap justify-end gap-2 border-t border-gray-100 pt-4">
           <button id="postDeleteBtn" type="button" class="btn-ghost mr-auto hidden text-red-500">Xoá bài</button>
@@ -922,6 +933,8 @@
       $("#postTitle").value = f.title || "";
       $("#postExcerpt").value = f.excerpt || "";
       $("#postContent").value = f.content || "";
+      $("#postSlug").value = state.editing.slug || "";
+      state.slugTouched = Boolean(state.editing.slug);
       renderLangTabs();
     }
 
@@ -948,8 +961,8 @@
       $("#postDraftBtn").textContent = published ? "⬇ Gỡ xuống (chuyển nháp)" : "💾 Lưu nháp";
       $("#postDeleteBtn").classList.toggle("hidden", !p);
       $("#postViewLink").classList.toggle("hidden", !published);
-      // Mở thẳng bài này trên trang chủ (bản demo không có bài thật nên chỉ mở mục Blog)
-      $("#postViewLink").href = published && !IS_DEMO ? `index.html#post-${state.editing.id}` : "index.html#blog";
+      // Mở thẳng trang bài viết /kien-thuc/<slug>
+      $("#postViewLink").href = `/kien-thuc/${state.editing.slug || ""}`;
       renderPostList();
     }
 
@@ -960,9 +973,47 @@
       state.postLang = b.dataset.lang;
       fillLangFields();
     });
+    // Đường dẫn bài viết: tự tạo từ tiêu đề cho tới khi admin tự sửa ô đường dẫn
+    const slugify = (t) => String(t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 80).replace(/-+$/g, "");
     $("#postTitle").addEventListener("input", () => {
       captureLangFields();
       renderLangTabs();
+      if (!state.slugTouched) $("#postSlug").value = slugify($("#postTitle").value);
+    });
+    $("#postSlug").addEventListener("input", () => (state.slugTouched = true));
+    $("#postSlug").addEventListener("change", (e) => (e.target.value = slugify(e.target.value)));
+
+    // Nạp 3 bài mẫu (sample-posts.js) thành bản nháp để PT đọc lại rồi đăng
+    $("#samplePostsBtn").addEventListener("click", async () => {
+      if (!confirm("Thêm 3 bài viết mẫu về dinh dưỡng & tập luyện (dạng NHÁP)? Bạn đọc lại, sửa rồi bấm Đăng.")) return;
+      try {
+        if (!window.SAMPLE_POSTS) {
+          await new Promise((ok, fail) => {
+            const sc = document.createElement("script");
+            sc.src = "sample-posts.js";
+            sc.onload = ok;
+            sc.onerror = fail;
+            document.head.appendChild(sc);
+          });
+        }
+        for (const sp of [...window.SAMPLE_POSTS].reverse()) {
+          const post = { id: null, status: "draft", pinned: false, image: "", slug: sp.slug, i18n: { vi: { title: sp.title, excerpt: sp.excerpt, content: sp.content } } };
+          let saved;
+          if (IS_DEMO) {
+            const now = new Date().toISOString();
+            saved = { ...post, id: crypto.randomUUID(), createdAt: now, updatedAt: now, publishedAt: null };
+          } else {
+            saved = (await api("POST", { action: "post-save", post })).post;
+          }
+          state.posts = [saved, ...state.posts];
+        }
+        renderPostList();
+        openPost(state.posts[0]);
+        toast("Đã thêm 3 bài nháp. Đọc lại rồi bấm “🚀 Đăng lên web”.");
+      } catch (err) {
+        console.error(err);
+        toast("Chưa thêm được bài mẫu, thử lại nhé");
+      }
     });
     $("#postList").addEventListener("click", (e) => {
       const b = e.target.closest(".post-item");
@@ -1019,7 +1070,7 @@
 
       if (!state.editing.i18n.vi?.title) return toast("Bài cần có tiêu đề");
       const i18n = { vi: state.editing.i18n.vi };
-      const payload = { ...state.editing, i18n, status };
+      const payload = { ...state.editing, i18n, status, slug: slugify($("#postSlug").value) };
 
       const btns = [$("#postPublishBtn"), $("#postDraftBtn")];
       btns.forEach((b) => (b.disabled = true));

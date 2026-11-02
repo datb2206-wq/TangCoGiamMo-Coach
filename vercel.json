@@ -2,6 +2,15 @@
   "functions": {
     "api/admin.js": { "maxDuration": 60 },
     "api/lead.js": { "maxDuration": 10 },
-    "api/posts.js": { "maxDuration": 10 }
-  }
+    "api/posts.js": { "maxDuration": 10 },
+    "api/article.js": { "maxDuration": 10 },
+    "api/sitemap.js": { "maxDuration": 10 },
+    "api/post-image.js": { "maxDuration": 10 }
+  },
+  "rewrites": [
+    { "source": "/kien-thuc", "destination": "/api/article" },
+    { "source": "/kien-thuc/:slug", "destination": "/api/article?slug=:slug" },
+    { "source": "/sitemap.xml", "destination": "/api/sitemap" },
+    { "source": "/anh-bai-viet/:id", "destination": "/api/post-image?id=:id" }
+  ]
 }
