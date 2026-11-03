@@ -123,7 +123,7 @@ async function savePostAction(input, res) {
   if (!Object.keys(i18n).length) return res.status(400).json({ error: "missing_title" });
 
   const image = typeof input.image === "string" ? input.image.trim() : "";
-  const imageOk = !image || (/^data:image\/(jpeg|png|webp);base64,/.test(image) && image.length <= MAX_IMAGE_CHARS) || (/^https:\/\/\S+$/.test(image) && image.length <= 2000);
+  const imageOk = !image || (/^data:image\/(jpeg|png|webp);base64,/.test(image) && image.length <= MAX_IMAGE_CHARS) || (/^https:\/\/\S+$/.test(image) && image.length <= 2000) || /^\/images\/minh-hoa\/\d{2}\.webp$/.test(image);
   if (!imageOk) return res.status(400).json({ error: "invalid_image" });
 
   const existing = isLeadId(input.id) ? await getPost(input.id) : null;

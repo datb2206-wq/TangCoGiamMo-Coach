@@ -9,7 +9,7 @@
  * Số Zalo, tên PT, Meta Pixel lấy từ /config.js (giống trang chủ).
  */
 import { hasStore, listPosts } from "./_lib/store.js";
-import { SITE_URL, esc, postText, postSlug, postImageUrl, renderBlocks, autoExcerpt, readingMinutes } from "./_lib/blog.js";
+import { SITE_URL, esc, postText, postSlug, postImageUrl, isIllustration, renderBlocks, autoExcerpt, readingMinutes } from "./_lib/blog.js";
 
 const SITE_NAME = "TangCoGiamMo-Coach – PT Online Giảm Mỡ Tăng Cơ";
 const fmtDate = (d) => new Date(d).toLocaleDateString("vi-VN", { day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Ho_Chi_Minh" });
@@ -159,7 +159,10 @@ const card = (p) => {
   const img = postImageUrl(p);
   return `
     <a href="/kien-thuc/${esc(postSlug(p))}" class="card group block overflow-hidden">
+      <div class="relative overflow-hidden">
       ${img ? `<img src="${esc(img)}" alt="${esc(f.title)}" loading="lazy" class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105" />` : `<div class="grid aspect-[16/10] place-items-center bg-gradient-to-br from-primary-light to-leaf-light text-5xl">🥗</div>`}
+      ${isIllustration(img) ? `<span class="pointer-events-none absolute left-2 top-2 rounded-full bg-black/55 px-2 py-0.5 text-[11px] font-medium text-white">Ảnh minh họa</span>` : ""}
+      </div>
       <div class="p-5">
         <p class="text-[13px]">${fmtDate(p.publishedAt || p.createdAt)} · ${readingMinutes(f.content)} phút đọc</p>
         <h3 class="mt-1.5 text-lg font-bold leading-snug text-heading group-hover:text-primary">${esc(f.title)}</h3>
@@ -192,7 +195,7 @@ function articlePage(post, posts, origin) {
       <nav class="text-sm" aria-label="Vị trí"><a href="/" class="hover:text-primary">Trang chủ</a> › <a href="/kien-thuc" class="hover:text-primary">Kiến thức</a></nav>
       <h1 class="mt-3 text-[1.75rem] font-bold leading-tight text-heading sm:text-4xl" style="text-wrap: balance">${esc(f.title)}</h1>
       <p class="mt-3 text-sm"><span data-pt-name>PT</span> · ${fmtDate(date)} · ${readingMinutes(f.content)} phút đọc</p>
-      ${img ? `<img src="${esc(img)}" alt="${esc(f.title)}" class="mt-6 aspect-[16/9] w-full rounded-2xl object-cover" />` : ""}
+      ${img ? `<figure class="mt-6"><img src="${esc(img)}" alt="${esc(f.title)}" class="aspect-[16/9] w-full rounded-2xl object-cover" />${isIllustration(img) ? `<figcaption class="mt-2 text-center text-xs text-gray-400">Ảnh minh họa</figcaption>` : ""}</figure>` : ""}
       ${f.excerpt ? `<p class="mt-6 rounded-2xl bg-light p-5 text-[17px] font-medium leading-relaxed text-heading">${esc(f.excerpt)}</p>` : ""}
       <div class="prose-vi mt-6">
         ${content}

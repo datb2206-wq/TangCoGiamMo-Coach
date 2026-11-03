@@ -5,6 +5,7 @@
 window.SAMPLE_POSTS = [
   {
     slug: "an-com-van-giam-can-1-bat-com-bao-nhieu-calo",
+    image: "/images/minh-hoa/11.webp",
     title: "Ăn cơm vẫn giảm cân: 1 bát cơm bao nhiêu calo và nên ăn bao nhiêu?",
     excerpt: "Không cần bỏ cơm trắng để giảm cân. Biết 1 bát cơm có bao nhiêu calo và cách chia đĩa ăn đúng lượng là bạn vẫn ăn chung mâm với gia đình mà mỡ vẫn giảm.",
     content: `Rất nhiều người bắt đầu giảm cân bằng cách bỏ cơm. Vài ngày đầu cân có thể xuống, nhưng phần lớn là nước. Sau đó cơ thể mệt, thèm ăn và rất dễ ăn bù. Thực tế, cân nặng giảm khi **tổng năng lượng bạn ăn mỗi ngày thấp hơn năng lượng cơ thể đốt**, chứ không phải vì bỏ một món cụ thể nào.
@@ -42,6 +43,7 @@ Bạn không cần bỏ cơm. Điều cần là **ăn đúng lượng, đủ đ�
   },
   {
     slug: "bang-calo-mon-an-viet-quen-thuoc",
+    image: "/images/minh-hoa/07.webp",
     title: "Bảng calo món ăn Việt quen thuộc: phở, bún, cơm tấm, bánh mì, trà sữa",
     excerpt: "Một tô phở, một ổ bánh mì hay một ly trà sữa có bao nhiêu calo? Bảng ước tính dưới đây giúp bạn chọn món ăn ngoài thông minh mà vẫn giảm cân.",
     content: `Ăn ngoài không có nghĩa là không giảm cân được. Quan trọng là bạn biết món nào "nặng" calo để cân đối các bữa còn lại trong ngày. Các con số dưới đây là **mức ước tính cho một suất phổ biến**; thực tế còn tùy quán, khẩu phần và lượng dầu mỡ.
@@ -91,6 +93,7 @@ Bạn vẫn ăn được món Việt quen thuộc khi giảm cân. Chỉ cần b
   },
   {
     slug: "lich-tap-nhe-30-phut-tai-nha-cho-nguoi-moi",
+    image: "/images/minh-hoa/10.webp",
     title: "Lịch tập nhẹ 30 phút tại nhà cho người mới bắt đầu (không cần dụng cụ)",
     excerpt: "Chỉ cần một tấm thảm và 30 phút, 3 buổi mỗi tuần. Bài tập nhẹ, dễ làm theo, phù hợp người mới, dân văn phòng và người ngại đến phòng Gym.",
     content: `Bạn không cần phòng Gym hay tập thật nặng để bắt đầu. Với người mới, điều quan trọng nhất là **tập đúng kỹ thuật và đều đặn**. Lịch dưới đây chỉ cần một tấm thảm, khoảng 30 phút mỗi buổi, 3 buổi mỗi tuần.

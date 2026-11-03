@@ -151,6 +151,11 @@
               <button id="postImgClear" type="button" class="btn-ghost text-red-500">Xoá ảnh</button>
             </div>
             <input id="postImgUrl" type="url" placeholder="…hoặc dán link ảnh (https://…)" class="field" />
+            <details class="rounded-md bg-light p-2">
+              <summary class="cursor-pointer text-sm font-medium text-heading">🖼 Chọn ảnh minh họa có sẵn</summary>
+              <p class="mt-1 text-xs text-gray-400">Ảnh mẫu, không phải học viên. Trên web sẽ tự ghi chú "Ảnh minh họa".</p>
+              <div id="illusGrid" class="mt-2 grid grid-cols-4 gap-1.5"></div>
+            </details>
             <p class="text-xs text-gray-400">Ảnh tải lên được tự thu nhỏ để trang tải nhanh. Nên dùng ảnh ngang.</p>
           </div>
         </div>
@@ -943,7 +948,7 @@
       $("#postImgPreview").src = src || "";
       $("#postImgPreview").classList.toggle("hidden", !src);
       $("#postImgEmpty").classList.toggle("hidden", !!src);
-      $("#postImgUrl").value = src && !src.startsWith("data:") ? src : "";
+      $("#postImgUrl").value = src && /^https:/.test(src) ? src : "";
     }
 
     function openPost(p) {
@@ -997,7 +1002,7 @@
           });
         }
         for (const sp of [...window.SAMPLE_POSTS].reverse()) {
-          const post = { id: null, status: "draft", pinned: false, image: "", slug: sp.slug, i18n: { vi: { title: sp.title, excerpt: sp.excerpt, content: sp.content } } };
+          const post = { id: null, status: "draft", pinned: false, image: sp.image || "", slug: sp.slug, i18n: { vi: { title: sp.title, excerpt: sp.excerpt, content: sp.content } } };
           let saved;
           if (IS_DEMO) {
             const now = new Date().toISOString();
@@ -1021,6 +1026,14 @@
     });
     $("#newPostBtn").addEventListener("click", () => openPost(null));
     $("#postImgClear").addEventListener("click", () => setImage(""));
+    // Ảnh minh họa có sẵn trong thư mục images/minh-hoa/ (01.webp … 12.webp)
+    $("#illusGrid").innerHTML = Array.from({ length: 12 }, (_, i) => `/images/minh-hoa/${String(i + 1).padStart(2, "0")}.webp`)
+      .map((src) => `<button type="button" data-illus="${src}" class="overflow-hidden rounded ring-1 ring-black/10 hover:ring-2 hover:ring-blue-500"><img src="${src}" alt="" loading="lazy" class="aspect-[3/2] w-full object-cover" /></button>`)
+      .join("");
+    $("#illusGrid").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-illus]");
+      if (b) setImage(b.dataset.illus);
+    });
     $("#postImgUrl").addEventListener("change", (e) => {
       const url = e.target.value.trim();
       if (url && !/^https:\/\//.test(url)) return toast("Link ảnh phải bắt đầu bằng https://");

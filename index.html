@@ -1321,7 +1321,10 @@ window.SITE_CONFIG = {
           .map(
             (p) => `
           <a href="/kien-thuc/${esc(p.slug)}" class="card group block overflow-hidden">
+            <div class="relative overflow-hidden">
             ${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105" />` : `<div class="grid aspect-[16/10] place-items-center bg-gradient-to-br from-primary-light to-leaf-light text-5xl">🥗</div>`}
+            ${/^\/images\/minh-hoa\//.test(p.image || "") ? `<span class="pointer-events-none absolute left-2 top-2 rounded-full bg-black/55 px-2 py-0.5 text-[11px] font-medium text-white">Ảnh minh họa</span>` : ""}
+            </div>
             <div class="p-5">
               <p class="text-[13px]">${formatDate(p.publishedAt)}${p.minutes ? ` · ${p.minutes} phút đọc` : ""}</p>
               <h3 class="mt-1.5 text-lg font-bold leading-snug text-heading group-hover:text-primary">${esc(p.title)}</h3>

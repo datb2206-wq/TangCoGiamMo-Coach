@@ -30,6 +30,8 @@ export const postText = (p) => p?.i18n?.vi || Object.values(p?.i18n || {})[0] ||
 // Đường dẫn của bài: slug đã lưu, bài cũ chưa có slug thì tạo từ tiêu đề + 6 ký tự đầu của id
 export const postSlug = (p) => p.slug || `${slugify(postText(p).title) || "bai-viet"}-${String(p.id).slice(0, 6)}`;
 // Ảnh bìa: ảnh tải lên (base64) được phục vụ qua /anh-bai-viet/<id> để trang nhẹ và dùng được cho chia sẻ Facebook
+// Ảnh minh họa có sẵn (ảnh mẫu, không phải học viên) -> luôn ghi chú "Ảnh minh họa"
+export const isIllustration = (src) => /^\/images\/minh-hoa\//.test(src || "");
 export const postImageUrl = (p) => (!p.image ? "" : p.image.startsWith("data:") ? `/anh-bai-viet/${p.id}` : p.image);
 
 const inline = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
