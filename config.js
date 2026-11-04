@@ -90,11 +90,11 @@ window.SITE_CONFIG = {
   RESULTS: [
     { who: "Chị N.", before: 63, after: 60, time: "15 buổi", images: [{ src: "images/ket-qua/nu-63-60-15buoi.webp", label: "Mặt trước" }] },
     { who: "Chị V.", before: 57, after: 54.5, time: "16 buổi", images: [{ src: "images/ket-qua/nu-57-545-16buoi.webp", label: "Mặt trước" }] },
-    { who: "Anh T.", before: 86.2, after: 80.4, time: "36 buổi", images: [
+    { who: "Anh T.", before: 86.2, after: 80.4, time: "25 ngày", images: [
       { src: "images/ket-qua/nam-862-804-truoc.webp", label: "Mặt trước" },
       { src: "images/ket-qua/nam-862-804-ngang.webp", label: "Mặt ngang" } ] },
-    { who: "Chị L.", before: 56.7, after: 52.2, time: "40 buổi", images: [{ src: "images/ket-qua/nu-567-522-40buoi.webp", label: "Mặt ngang" }] },
-    { who: "Anh H.", before: 69.3, after: 63.7, time: "90 ngày", images: [{ src: "images/ket-qua/nam-693-637-3thang.webp", label: "Mặt ngang" }] },
-    { who: "Chị M.", before: 55, after: 52, time: "90 ngày", images: [{ src: "images/ket-qua/nu-55-52-3thang.webp", label: "Mặt trước" }] },
+    { who: "Chị L.", before: 56.7, after: 52.2, time: "25 ngày", images: [{ src: "images/ket-qua/nu-567-522-40buoi.webp", label: "Mặt ngang" }] },
+    { who: "Anh H.", before: 69.3, after: 63.7, time: "45 ngày", images: [{ src: "images/ket-qua/nam-693-637-3thang.webp", label: "Mặt ngang" }] },
+    { who: "Chị M.", before: 55, after: 52, time: "45 ngày", images: [{ src: "images/ket-qua/nu-55-52-3thang.webp", label: "Mặt trước" }] },
   ],
 };
