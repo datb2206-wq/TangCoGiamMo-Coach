@@ -695,7 +695,10 @@
             ${row("Mức vận động", l.activityFromCalc === false ? "Chưa rõ (tạm tính: nhẹ)" : ACTIVITY_LABEL[l.activity] || "—")}
             ${row("Thói quen ăn uống", esc([l.eating, ...(l.habits || [])].filter(Boolean).join(", ") || "—"))}
             ${row("Sức khỏe / ghi chú", esc(l.note || "—"))}
+            ${row("Ảnh dáng người", l.photos?.length ? `✅ Đã tải ${l.photos.length}/3 ảnh trên web` : "Chưa tải trên web – nhắc khách gửi qua Zalo")}
           </div>
+          ${l.photos?.length ? `<div id="leadPhotos" class="mt-4 grid max-w-md grid-cols-3 gap-2">${l.photos.map(() => '<div class="aspect-[3/4] animate-pulse rounded-md bg-light"></div>').join("")}</div>
+          <p class="mt-1 text-xs text-gray-400">Bấm ảnh để xem lớn. Ảnh tự xoá sau 90 ngày, chỉ admin xem được.</p>` : ""}
         </div>
 
         <div class="card">
@@ -814,6 +817,7 @@
         }
       });
 
+      if (l.photos?.length) loadLeadPhotos(l.id);
       $("#copyProfileBtn").addEventListener("click", async () => {
         await copy(profileSummary(l));
         toast("Đã sao chép hồ sơ, dán vào công cụ lập lộ trình");
@@ -826,6 +830,30 @@
     }
 
     // Khối tóm tắt hồ sơ (server tạo sẵn khi khách gửi form; khách cũ thì tạo tại đây)
+    // Ảnh dáng người khách tải lên ở Phiếu Khám (lấy riêng khi mở hồ sơ)
+    const PHOTO_LABEL = { front: "Mặt trước", side: "Mặt ngang", back: "Mặt sau" };
+    async function loadLeadPhotos(id) {
+      try {
+        const photos = IS_DEMO ? [] : (await api("POST", { action: "photos", id })).photos;
+        const box = $("#leadPhotos");
+        if (!box || state.selectedId !== id) return;
+        box.innerHTML = photos.length
+          ? photos.map((p) => `<a href="#" data-photo="${p.angle}" class="block overflow-hidden rounded-md ring-1 ring-black/10" title="${PHOTO_LABEL[p.angle]}"><img src="${p.data}" alt="${PHOTO_LABEL[p.angle]}" class="aspect-[3/4] w-full object-cover" /><span class="block bg-light py-1 text-center text-xs">${PHOTO_LABEL[p.angle]}</span></a>`).join("")
+          : '<p class="col-span-3 text-xs text-gray-400">Ảnh đã hết hạn lưu (90 ngày) hoặc đã bị xoá.</p>';
+        // Mở ảnh lớn ở tab mới (trình duyệt chặn mở thẳng data:, nên đổi sang blob)
+        box.onclick = async (e) => {
+          const a = e.target.closest("[data-photo]");
+          if (!a) return;
+          e.preventDefault();
+          const p = photos.find((x) => x.angle === a.dataset.photo);
+          const blob = await (await fetch(p.data)).blob();
+          window.open(URL.createObjectURL(blob), "_blank", "noopener");
+        };
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
     function profileSummary(l) {
       if (l.summary) return l.summary;
       const m = metrics(l);

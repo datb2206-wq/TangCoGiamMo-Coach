@@ -18,7 +18,7 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 import Anthropic from "@anthropic-ai/sdk";
 import { randomUUID } from "node:crypto";
-import { hasStore, listLeads, getLead, updateLead, deleteLead, isLeadId, listPosts, getPost, savePost, deletePost } from "./_lib/store.js";
+import { hasStore, listLeads, getLead, updateLead, deleteLead, isLeadId, listPosts, getPost, savePost, deletePost, getLeadPhotos } from "./_lib/store.js";
 import { slugify, postSlug, isCategory } from "./_lib/blog.js";
 
 const MODEL = process.env.CLAUDE_MODEL || "claude-opus-5-5";
@@ -79,6 +79,8 @@ export default async function handler(req, res) {
       await deleteLead(body.id);
       return res.status(200).json({ ok: true });
     }
+    // Ảnh dáng người khách tải lên ở Phiếu Khám (chỉ admin xem được)
+    if (body.action === "photos") return res.status(200).json({ photos: await getLeadPhotos(body.id) });
 
     const lead = await getLead(body.id);
     if (!lead) return res.status(404).json({ error: "not_found" });

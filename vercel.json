@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/admin.js": { "maxDuration": 60 },
-    "api/lead.js": { "maxDuration": 10 },
+    "api/lead.js": { "maxDuration": 20 },
     "api/posts.js": { "maxDuration": 10 },
     "api/article.js": { "maxDuration": 10 },
     "api/sitemap.js": { "maxDuration": 10 },

@@ -9,8 +9,20 @@
  * Mỗi hồ sơ có sẵn "summary": 1 khối văn bản tóm tắt để PT copy nguyên đoạn dán vào công cụ lập Plan.
  */
 import { randomUUID } from "node:crypto";
-import { hasStore, addLead } from "./_lib/store.js";
-import { hasTelegram, notifyAdmin, esc } from "./_lib/telegram.js";
+import { hasStore, addLead, saveLeadPhotos, PHOTO_ANGLES } from "./_lib/store.js";
+import { hasTelegram, notifyAdmin, sendPhotos, esc } from "./_lib/telegram.js";
+
+// Ảnh dáng người khách tải lên (không bắt buộc): JPEG đã nén ở trình duyệt, tối đa 3 ảnh
+const PHOTO_MAX_CHARS = 450_000; // ~330KB / ảnh
+const ANGLE_NAMES = { front: "Mặt trước", side: "Mặt ngang", back: "Mặt sau" };
+function cleanPhotos(list) {
+  if (!Array.isArray(list)) return [];
+  const seen = new Set();
+  return list
+    .filter((p) => p && PHOTO_ANGLES.includes(p.angle) && !seen.has(p.angle) && seen.add(p.angle))
+    .filter((p) => typeof p.data === "string" && /^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(p.data) && p.data.length <= PHOTO_MAX_CHARS)
+    .map((p) => ({ angle: p.angle, data: p.data }));
+}
 
 const SHEETS_URL = process.env.GOOGLE_SHEETS_WEBHOOK_URL || "";
 
@@ -123,12 +135,19 @@ export default async function handler(req, res) {
   if (lead.name.length < 2 || !/^0\d{9}$/.test(lead.contact) || !lead.age || !lead.height || !lead.weight || !lead.place) {
     return res.status(400).json({ error: "Thiếu thông tin bắt buộc" });
   }
+  const photos = cleanPhotos(body.photos);
+  lead.photos = photos.map((p) => p.angle);
   lead.summary = buildSummary(lead);
 
   const tasks = [];
-  if (hasStore()) tasks.push(["store", () => addLead(lead)]);
+  if (hasStore()) tasks.push(["store", async () => { await addLead(lead); await saveLeadPhotos(lead.id, photos); }]);
   if (SHEETS_URL) tasks.push(["sheets", () => sendToSheets(lead)]);
-  if (hasTelegram()) tasks.push(["telegram", () => notifyAdmin(telegramText(lead, req.headers.host))]);
+  if (hasTelegram()) {
+    tasks.push(["telegram", async () => {
+      await notifyAdmin(telegramText(lead, req.headers.host));
+      if (photos.length) await sendPhotos(photos, `📸 Ảnh dáng người của <b>${esc(lead.name)}</b>: ${photos.map((p) => ANGLE_NAMES[p.angle]).join(" · ")}`);
+    }]);
+  }
 
   const results = await Promise.allSettled(tasks.map(([, fn]) => fn()));
   results.forEach((r, i) => r.status === "rejected" && console.error(`[lead] ${tasks[i][0]} lỗi:`, r.reason));
@@ -157,6 +176,7 @@ async function sendToSheets(l) {
       thoiQuenAn: l.eating,
       sucKhoe: l.note,
       goi: l.plan,
+      anhDangNguoi: l.photos?.length ? `Đã tải ${l.photos.length} ảnh trên web (xem ở trang admin)` : "Chưa – gửi qua Zalo",
       tomTat: l.summary,
       id: l.id,
     }),
@@ -172,7 +192,11 @@ function telegramText(l, host) {
     `👤 <b>${esc(l.name)}</b> · 📱 <a href="https://zalo.me/${l.contact}">Chat Zalo ${l.contact}</a>`,
     hasStore() ? `👉 <a href="https://${host}/admin.html#${l.id}">Mở trang admin</a>` : null,
     "",
-    "📸 Nhắc khách gửi 3 ảnh dáng người (trước – ngang – sau) qua Zalo, rồi gửi giáo án 3 ngày miễn phí.",
+    l.photos?.length === 3
+      ? "📸 Khách ĐÃ tải đủ 3 ảnh dáng người trên web (ảnh gửi ngay bên dưới)."
+      : l.photos?.length
+        ? `📸 Khách đã tải ${l.photos.length}/3 ảnh trên web (bên dưới), nhắc gửi nốt qua Zalo.`
+        : "📸 Nhắc khách gửi 3 ảnh dáng người (trước – ngang – sau) qua Zalo, rồi gửi giáo án 3 ngày miễn phí.",
     "",
     "📋 Bấm vào khối dưới để sao chép hồ sơ:",
     `<pre>${esc(l.summary)}</pre>`,

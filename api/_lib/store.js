@@ -54,9 +54,24 @@ export async function updateLead(lead) {
 
 export async function deleteLead(id) {
   await pipeline([
-    ["DEL", `lead:${id}`],
+    ["DEL", `lead:${id}`, ...PHOTO_ANGLES.map((a) => `leadphoto:${id}:${a}`)],
     ["LREM", LIST_KEY, 0, id],
   ]);
+}
+
+/* ----------------------------- ẢNH DÁNG NGƯỜI (khách tải lên ở Phiếu Khám) ----------------------------- */
+// Lưu riêng từng ảnh (không nằm trong hồ sơ để danh sách khách tải nhanh). Tự xoá sau PHOTO_TTL_DAYS ngày.
+export const PHOTO_ANGLES = ["front", "side", "back"];
+export const PHOTO_TTL_DAYS = 90;
+
+export async function saveLeadPhotos(id, photos) {
+  if (!photos.length) return;
+  await pipeline(photos.map((p) => ["SET", `leadphoto:${id}:${p.angle}`, p.data, "EX", PHOTO_TTL_DAYS * 86400]));
+}
+
+export async function getLeadPhotos(id) {
+  const [values] = await pipeline([["MGET", ...PHOTO_ANGLES.map((a) => `leadphoto:${id}:${a}`)]]);
+  return PHOTO_ANGLES.map((angle, i) => ({ angle, data: values[i] })).filter((p) => p.data);
 }
 
 export async function listLeads(limit = 300) {
