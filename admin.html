@@ -124,7 +124,7 @@
         <div class="flex items-center justify-between gap-2 border-b border-gray-100 p-4">
           <p class="font-semibold text-heading">Bài viết</p>
           <div class="flex gap-1.5">
-            <button id="samplePostsBtn" type="button" class="btn-ghost px-2.5 py-1.5 text-xs" title="Thêm 3 bài viết mẫu về dinh dưỡng & tập luyện (dạng nháp)">📥 3 bài mẫu</button>
+            <button id="samplePostsBtn" type="button" class="btn-ghost px-2.5 py-1.5 text-xs" title="Nạp các bài nền tảng đang hiện trên web thành bản nháp để sửa">📥 Bài mẫu</button>
             <button id="newPostBtn" type="button" class="btn-primary px-3 py-1.5 text-xs">＋ Bài mới</button>
           </div>
         </div>
@@ -178,6 +178,16 @@
               </div>
             </div>
             <div>
+              <label for="postCategory" class="mb-1 block font-medium text-heading">Chuyên mục <span class="font-normal text-gray-400">(hiện trên thẻ bài và thanh lọc ở trang Kiến thức)</span></label>
+              <select id="postCategory" class="field">
+                <option value="">— Chưa chọn —</option>
+                <option value="dinh-duong">Dinh Dưỡng &amp; Bảng Calo</option>
+                <option value="thuc-don">Thực Đơn Cơm Nhà</option>
+                <option value="tap-tai-nha">Tập Tại Nhà (Home Workout)</option>
+                <option value="tap-gym">Kinh Nghiệm Tập Gym</option>
+              </select>
+            </div>
+            <div>
               <label for="postExcerpt" class="mb-1 block font-medium text-heading">Tóm tắt <span class="font-normal text-gray-400">(1–2 câu, hiện trên thẻ bài và trên Google; để trống thì tự lấy đầu bài)</span></label>
               <textarea id="postExcerpt" rows="2" maxlength="400" class="field"></textarea>
             </div>
@@ -227,8 +237,8 @@
     const GOAL_LABEL = ["Giảm mỡ bụng", "Siết cân, giảm cân toàn thân", "Tăng cơ, săn chắc", "Giảm mỡ sau sinh", "Cải thiện sức khoẻ, vóc dáng"];
     const PLACE_LABEL = { home: "🏠 Tại nhà (không dụng cụ)", home_gear: "🏠 Tại nhà (tạ đơn / dây kháng lực)", gym: "🏋️ Phòng Gym", unsure: "🤔 Chưa biết" };
     const SESSIONS_LABEL = { 3: "3 buổi/tuần", 4: "4 buổi/tuần", "5-6": "5–6 buổi/tuần" };
-    // ⚠️ Tên ký cuối lời khuyên gửi khách: đổi thành tên PT
-    const COACH_NAME = "PT Minh Anh";
+    // ⚠️ Tên ký cuối lời khuyên gửi khách: đổi thành tên Coach
+    const COACH_NAME = "Coach Hoàng Nam";
 
     /* ============================ TÍNH CHỈ SỐ ============================ */
     // BMI, BMR (Mifflin-St Jeor), TDEE, calo mục tiêu, đạm/béo/tinh bột, nước, thời gian dự kiến
@@ -292,7 +302,7 @@
     // Chuẩn BMI châu Á (giống công cụ tính calo trên trang chủ): <18.5, 18.5–22.9, 23–24.9, ≥25
     const bmiCategory = (bmi, lang) => {
       const i = bmi < 18.5 ? 0 : bmi < 23 ? 1 : bmi < 25 ? 2 : 3;
-      return { vi: ["hơi gầy", "cân đối", "hơi thừa cân", "cần giảm mỡ"], en: ["underweight", "healthy range", "overweight", "obesity"], zh: ["偏瘦", "正常", "超重", "肥胖"] }[lang][i];
+      return { vi: ["hơi gầy", "cân đối", "hơi thừa cân", "thừa mỡ – cần siết gọn"], en: ["underweight", "healthy range", "overweight", "obesity"], zh: ["偏瘦", "正常", "超重", "肥胖"] }[lang][i];
     };
 
     /* ============================ LỜI KHUYÊN TỰ ĐỘNG ============================ */
@@ -330,7 +340,7 @@
         lines.push(...habitLines(l, "vi", "🥢 Sửa thói quen ăn uống"));
         lines.push(`🏋️ Tập luyện (${{ home: "tại nhà", home_gear: "tại nhà", gym: "phòng Gym", unsure: "tại nhà hoặc phòng Gym" }[placeOf(l)]})`, ...trainingLines(l, "vi"), "- Đi bộ 8.000–10.000 bước mỗi ngày", "");
         lines.push("😴 Thói quen", "- Ngủ 7–8 tiếng mỗi đêm", "- Cân vào buổi sáng 1–2 lần/tuần, đo vòng eo mỗi 2 tuần", "");
-        lines.push("Đây là giáo án khởi đầu cho 3 ngày dùng thử miễn phí, PT sẽ điều chỉnh chi tiết theo lịch sinh hoạt và cơ địa của bạn. Việc của bạn là giữ kỷ luật và báo cáo mỗi ngày qua Zalo nhé! 💪", "— " + COACH_NAME);
+        lines.push("Đây là giáo án khởi đầu cho 3 ngày dùng thử miễn phí, Coach sẽ điều chỉnh chi tiết theo lịch sinh hoạt và cơ địa của bạn. Việc của bạn là giữ kỷ luật và báo cáo mỗi ngày qua Zalo nhé! 💪", "— " + COACH_NAME);
         return lines.join("\n");
       },
       en(l, m, f) {
@@ -939,6 +949,7 @@
       $("#postExcerpt").value = f.excerpt || "";
       $("#postContent").value = f.content || "";
       $("#postSlug").value = state.editing.slug || "";
+      $("#postCategory").value = state.editing.category || "";
       state.slugTouched = Boolean(state.editing.slug);
       renderLangTabs();
     }
@@ -988,10 +999,17 @@
     $("#postSlug").addEventListener("input", () => (state.slugTouched = true));
     $("#postSlug").addEventListener("change", (e) => (e.target.value = slugify(e.target.value)));
 
-    // Nạp 3 bài mẫu (sample-posts.js) thành bản nháp để PT đọc lại rồi đăng
+    // Nạp các bài nền tảng thành bản nháp để Coach sửa theo ý mình rồi đăng
+    // (bài đăng cùng đường dẫn sẽ thay bài nền tảng đang hiện trên web)
     $("#samplePostsBtn").addEventListener("click", async () => {
-      if (!confirm("Thêm 3 bài viết mẫu về dinh dưỡng & tập luyện (dạng NHÁP)? Bạn đọc lại, sửa rồi bấm Đăng.")) return;
+      if (!confirm("Nạp các bài nền tảng (đang hiện sẵn trên web) thành bản NHÁP để bạn sửa? Đăng bản đã sửa sẽ thay bài nền tảng cùng đường dẫn.")) return;
       try {
+        if (!window.SAMPLE_POSTS && !IS_DEMO) {
+          try {
+            const r = await fetch("/api/posts?seeds=1");
+            if (r.ok) window.SAMPLE_POSTS = (await r.json()).posts;
+          } catch (_) {}
+        }
         if (!window.SAMPLE_POSTS) {
           await new Promise((ok, fail) => {
             const sc = document.createElement("script");
@@ -1002,7 +1020,7 @@
           });
         }
         for (const sp of [...window.SAMPLE_POSTS].reverse()) {
-          const post = { id: null, status: "draft", pinned: false, image: sp.image || "", slug: sp.slug, i18n: { vi: { title: sp.title, excerpt: sp.excerpt, content: sp.content } } };
+          const post = { id: null, status: "draft", pinned: false, image: sp.image || "", slug: sp.slug, category: sp.category || "", i18n: { vi: { title: sp.title, excerpt: sp.excerpt, content: sp.content } } };
           let saved;
           if (IS_DEMO) {
             const now = new Date().toISOString();
@@ -1014,7 +1032,7 @@
         }
         renderPostList();
         openPost(state.posts[0]);
-        toast("Đã thêm 3 bài nháp. Đọc lại rồi bấm “🚀 Đăng lên web”.");
+        toast(`Đã thêm ${window.SAMPLE_POSTS.length} bài nháp. Sửa rồi bấm “🚀 Đăng lên web”.`);
       } catch (err) {
         console.error(err);
         toast("Chưa thêm được bài mẫu, thử lại nhé");
@@ -1083,7 +1101,7 @@
 
       if (!state.editing.i18n.vi?.title) return toast("Bài cần có tiêu đề");
       const i18n = { vi: state.editing.i18n.vi };
-      const payload = { ...state.editing, i18n, status, slug: slugify($("#postSlug").value) };
+      const payload = { ...state.editing, i18n, status, slug: slugify($("#postSlug").value), category: $("#postCategory").value };
 
       const btns = [$("#postPublishBtn"), $("#postDraftBtn")];
       btns.forEach((b) => (b.disabled = true));

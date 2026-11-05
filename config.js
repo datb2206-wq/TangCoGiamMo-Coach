@@ -4,8 +4,10 @@
  * ===================================================================== */
 window.SITE_CONFIG = {
   /* ---------- PT ---------- */
-  // Tên PT hiện trên web (ảnh đầu trang, popup cảm ơn, chân trang). Đổi tên ở đây là cả trang đổi theo.
-  PT_NAME: "PT Minh Anh",
+  // Tên Coach hiện trên web (đầu trang, popup cảm ơn, chân trang, blog). Đổi tên ở đây là cả trang đổi theo.
+  PT_NAME: "Coach Hoàng Nam",
+  // Số năm kinh nghiệm: hiện ở nhãn đầu trang, thanh số liệu, chân trang, FAQ, blog
+  EXPERIENCE_YEARS: 10,
 
   /* ---------- Liên hệ ---------- */
   // Số Zalo của PT (10 số, viết liền). Nút Zalo nổi + nút "Mở Zalo" sau khi gửi form dùng số này.
@@ -52,7 +54,7 @@ window.SITE_CONFIG = {
         days: 30, // dùng để tính "≈ ... đ/ngày"
         features: [
           "Mỗi ngày nhận giáo án tập và thực đơn dinh dưỡng mới",
-          "PT kiểm tra bữa ăn & nhắc kỷ luật mỗi ngày qua Zalo",
+          "Coach kiểm tra bữa ăn & nhắc kỷ luật mỗi ngày qua Zalo",
           "Chỉnh kỹ thuật bài tập qua video",
           "Cập nhật cân nặng, số đo hằng tuần để điều chỉnh giáo án",
           "Đóng theo từng tháng, muốn dừng lúc nào cũng được",

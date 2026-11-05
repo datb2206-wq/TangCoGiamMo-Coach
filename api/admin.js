@@ -13,17 +13,17 @@
  *   ADMIN_EMAIL, ADMIN_PASSWORD                      – email + mật khẩu đăng nhập trang admin (bắt buộc)
  *   UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN – nơi lưu khách (bắt buộc)
  *   ANTHROPIC_API_KEY, CLAUDE_MODEL                  – chỉ cần nếu muốn dùng nút "Viết lại bằng AI"
- *   COACH_NAME                                       – tên PT ký cuối tin nhắn AI viết (không bắt buộc, mặc định "PT Minh Anh")
+ *   COACH_NAME                                       – tên PT ký cuối tin nhắn AI viết (không bắt buộc, mặc định "Coach Hoàng Nam")
  */
 import { createHash, timingSafeEqual } from "node:crypto";
 import Anthropic from "@anthropic-ai/sdk";
 import { randomUUID } from "node:crypto";
 import { hasStore, listLeads, getLead, updateLead, deleteLead, isLeadId, listPosts, getPost, savePost, deletePost } from "./_lib/store.js";
-import { slugify, postSlug } from "./_lib/blog.js";
+import { slugify, postSlug, isCategory } from "./_lib/blog.js";
 
 const MODEL = process.env.CLAUDE_MODEL || "claude-opus-5-5";
 const LANGUAGE_NAMES = { vi: "Vietnamese", en: "English", zh: "Simplified Chinese" };
-const COACH_NAME = process.env.COACH_NAME || "PT Minh Anh";
+const COACH_NAME = process.env.COACH_NAME || "Coach Hoàng Nam";
 
 // So sánh an toàn (không lộ độ dài / thời gian)
 function sameSecret(given, expected) {
@@ -139,6 +139,7 @@ async function savePostAction(input, res) {
     status,
     pinned: Boolean(input.pinned),
     slug,
+    category: isCategory(input.category) ? input.category : "",
     image,
     i18n,
     createdAt: existing?.createdAt || now,
@@ -154,7 +155,7 @@ async function savePostAction(input, res) {
 // ------------------------------------------------------------------
 let client;
 
-const SYSTEM_PROMPT = `You help ${COACH_NAME} (brand: TangCoGiamMo-Coach, affordable 1-on-1 online weight-loss coaching for the Vietnamese mass market, 5 years of experience) write a personal starting-plan message for a new client. The coach will review and edit your text before copying it to the client on Zalo, so write the final message exactly as the client would receive it.
+const SYSTEM_PROMPT = `You help ${COACH_NAME} (brand: TangCoGiamMo-Coach, affordable 1-on-1 online weight-loss coaching for the Vietnamese mass market, 10 years of experience) write a personal starting-plan message for a new client. The coach will review and edit your text before copying it to the client on Zalo, so write the final message exactly as the client would receive it.
 
 Service: the client gets a free body check and a free 3-day nutrition + training plan; if they like it they continue at 288,000 VND per 30 days, with a new daily plan and daily check-ins on Zalo. This message is their free 3-day starting plan, so make the first 3 days very concrete (what to eat and how to train on day 1, 2 and 3).
 

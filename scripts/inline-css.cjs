@@ -48,3 +48,13 @@ replaceBetween("SITE-IMAGES", `<script>window.SITE_IMAGES = ${JSON.stringify(ima
 fs.writeFileSync(file, html);
 console.log(`Đã nhúng ${Object.keys(images).length} ảnh học viên (${Math.round(bytes / 1024)} KB)`);
 console.log(`Đã nhúng CSS (${css.length.toLocaleString()} ký tự) và cấu hình dự phòng vào index.html`);
+
+// Tạo sample-posts.js (nút "📥 Bài mẫu" trong admin khi mở file trực tiếp) từ api/_lib/seed-posts.js
+import(path.join(root, "api/_lib/seed-posts.js")).then(({ SEED_POSTS }) => {
+  const data = SEED_POSTS.map((p) => ({ slug: p.slug, category: p.category, image: p.image, ...p.i18n.vi }));
+  fs.writeFileSync(
+    path.join(root, "sample-posts.js"),
+    `/* TỰ TẠO từ api/_lib/seed-posts.js khi chạy npm run build:css – sửa bài ở file đó, không sửa ở đây. */\nwindow.SAMPLE_POSTS = ${JSON.stringify(data, null, 2)};\n`,
+  );
+  console.log(`Đã tạo sample-posts.js (${data.length} bài nền tảng)`);
+});
