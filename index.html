@@ -833,7 +833,7 @@ window.SITE_CONFIG = {
   <!-- ===================== POPUP CẢM ƠN SAU KHI GỬI FORM ===================== -->
   <div id="successModal" class="fixed inset-0 z-[80] hidden items-end justify-center overflow-y-auto bg-black/55 p-3 sm:items-center sm:p-4" role="dialog" aria-modal="true" aria-labelledby="successTitle">
     <div class="w-full max-w-md rounded-2xl bg-white p-5 shadow-2xl sm:p-7">
-      <p id="successTitle" class="text-center text-xl font-bold leading-snug text-heading">🎉 Đã Lưu Hồ Sơ Khám Của <span id="successName" class="text-primary-dark"></span>!</p>
+      <p id="successTitle" class="text-center text-xl font-bold leading-snug text-heading"><span id="successLead">🎉 Đã Lưu Hồ Sơ Khám Của</span> <span id="successName" class="text-primary-dark"></span>!</p>
       <div class="mt-4 rounded-xl bg-leaf-light p-4 text-[15px] leading-relaxed text-heading">
         Bạn hãy bấm mở Zalo bên dưới để gửi mã hồ sơ cho <span data-pt-name>Coach</span> xác nhận <b>giữ suất 3 ngày miễn phí</b> ngay bây giờ.
         <p id="photoNote" class="mt-2 text-sm text-body"></p>
@@ -1414,8 +1414,18 @@ window.SITE_CONFIG = {
       btn.textContent = lead.photos.length ? "Đang gửi hồ sơ & ảnh…" : "Đang gửi…";
       showErr($("#formError"), "");
       try {
-        await sendLead(lead);
-        track("Lead", { content_name: lead.plan || "Check Form" });
+        let viaZalo = false;
+        try {
+          await sendLead(lead);
+          track("Lead", { content_name: lead.plan || "Check Form" });
+        } catch (err) {
+          // Máy chủ chưa cấu hình nơi nhận (thiếu biến môi trường trên Vercel) hoặc mất mạng:
+          // KHÔNG để mất khách -> chuyển sang gửi toàn bộ hồ sơ qua tin nhắn Zalo
+          console.error("[lead] gửi máy chủ lỗi, chuyển sang Zalo:", err);
+          viaZalo = true;
+        }
+        if (viaZalo) lead.photos = [];
+        lead.viaZalo = viaZalo;
         form.reset();
         ["age", "goalText"].forEach((k) => delete form.elements[k].dataset.auto);
         collapseBody(false);
@@ -1426,7 +1436,7 @@ window.SITE_CONFIG = {
         openSuccess(lead);
       } catch (err) {
         console.error(err);
-        // Kèm mã lỗi nhỏ để chủ web biết nguyên nhân khi khách chụp màn hình gửi lại
+        // (Dự phòng – thường không tới đây vì lỗi gửi đã chuyển sang Zalo ở trên)
         showErr($("#formError"), `Có lỗi kết nối. Bạn vui lòng thử lại hoặc bấm nút Zalo để nhắn trực tiếp cho Coach.${err.code ? ` (Mã lỗi ${err.code}${err.detail ? ": " + err.detail : ""})` : ""}`);
       } finally {
         btn.disabled = false;
@@ -1457,6 +1467,20 @@ window.SITE_CONFIG = {
     function zaloMessage(l) {
       const n = (l.photos || []).length;
       const anh = n === 3 ? " Mình đã tải đủ 3 ảnh dáng người lên web." : n ? ` Mình đã tải ${n} ảnh dáng người lên web, ảnh còn lại mình gửi sau.` : "";
+      if (l.viaZalo) {
+        // Hồ sơ chưa lưu được trên máy chủ -> tin nhắn mang ĐỦ thông tin để Coach lên giáo án
+        const SESS = { 3: "3 buổi/tuần", 4: "4 buổi/tuần", "5-6": "5–6 buổi/tuần" };
+        return [
+          `Chào Coach, mình là ${l.name} (${l.contact}). Mình vừa điền phiếu khám trên web, nhờ Coach gửi giúp lộ trình 3 ngày miễn phí nhé!`,
+          `- ${l.sex === "male" ? "Nam" : "Nữ"}, ${l.age} tuổi, ${l.height}cm, ${l.weight}kg`,
+          `- Mục tiêu: ${l.goalText}`,
+          `- Tập tại: ${PLACE_TEXT[l.place] || l.place}, ${SESS[l.sessions] || l.sessions}`,
+          `- Ăn uống: ${l.eating}`,
+          l.note ? `- Sức khỏe/ghi chú: ${l.note}` : "",
+          l.plan ? `- Gói quan tâm: ${l.plan}` : "",
+          "Mình sẽ gửi 3 ảnh dáng người (che mặt) ngay sau tin này hoặc tối nay.",
+        ].filter(Boolean).join("\n");
+      }
       return `Chào Coach, mình là ${l.name} (${l.contact}). Mình vừa điền phiếu khám trên web (${l.height}cm - ${l.weight}kg - Mục tiêu: ${l.goalText} - Tập tại: ${PLACE_TEXT[l.place] || l.place}).${anh} Gửi giúp mình lộ trình 3 ngày miễn phí nhé!`;
     }
     // Copy: ưu tiên Clipboard API, dự phòng execCommand (trình duyệt trong app Facebook/Zalo)
@@ -1491,7 +1515,13 @@ window.SITE_CONFIG = {
           : n
             ? `<b class="text-heading">✅ Đã nhận ${n}/3 ảnh.</b> Ảnh còn lại (che mặt) bạn gửi qua Zalo lúc tiện, <b class="text-heading">tối về chụp gửi sau</b> cũng được nhé!`
             : '<b class="text-heading">Lưu ý về 3 ảnh dáng người</b> (trước – ngang – sau, che mặt): nếu đang tiện bạn gửi luôn qua Zalo, hoặc nhắn kết bạn với Coach trước rồi <b class="text-heading">tối về chụp gửi bổ sung sau</b> đều được nhé!';
+      $("#successLead").textContent = lead.viaZalo ? "📩 Còn 1 bước: gửi hồ sơ qua Zalo," : "🎉 Đã Lưu Hồ Sơ Khám Của";
+      if (lead.viaZalo) {
+        $("#photoNote").innerHTML =
+          '<b class="text-heading">⚠️ Bước quan trọng: bấm nút Zalo bên dưới, dán tin nhắn và GỬI</b> để Coach nhận hồ sơ của bạn. 3 ảnh dáng người (che mặt) gửi luôn trong Zalo, hoặc tối về gửi sau cũng được.';
+      }
       $("#zaloMsg").value = zaloMessage(lead);
+      $("#zaloMsg").rows = lead.viaZalo ? 7 : 5;
       $("#copyNote").classList.add("hidden");
       $("#successModal").classList.remove("hidden");
       $("#successModal").classList.add("flex");
