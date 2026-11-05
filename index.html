@@ -1207,7 +1207,12 @@ window.SITE_CONFIG = {
         return;
       }
       const res = await fetch(LEAD_API, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(lead) });
-      if (!res.ok) throw new Error("Lead API " + res.status);
+      if (!res.ok) {
+        const err = new Error("Lead API " + res.status);
+        err.code = res.status;
+        err.detail = (await res.json().catch(() => ({}))).error || "";
+        throw err;
+      }
     }
 
     // ---------- Ảnh dáng người (không bắt buộc): nén ngay trên điện thoại rồi gửi cùng phiếu ----------
@@ -1421,7 +1426,8 @@ window.SITE_CONFIG = {
         openSuccess(lead);
       } catch (err) {
         console.error(err);
-        showErr($("#formError"), "Có lỗi kết nối. Bạn vui lòng thử lại hoặc bấm nút Zalo để nhắn trực tiếp cho Coach.");
+        // Kèm mã lỗi nhỏ để chủ web biết nguyên nhân khi khách chụp màn hình gửi lại
+        showErr($("#formError"), `Có lỗi kết nối. Bạn vui lòng thử lại hoặc bấm nút Zalo để nhắn trực tiếp cho Coach.${err.code ? ` (Mã lỗi ${err.code}${err.detail ? ": " + err.detail : ""})` : ""}`);
       } finally {
         btn.disabled = false;
         btn.textContent = "🎁 Gửi Hồ Sơ & Nhận 3 Ngày Miễn Phí";
