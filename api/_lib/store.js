@@ -7,8 +7,13 @@
  *   (hoặc KV_REST_API_URL, KV_REST_API_TOKEN nếu tạo qua Vercel)
  */
 
-const REDIS_URL = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
-const REDIS_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
+// Nhận cả biến có tiền tố tuỳ ý khi kết nối database qua Vercel Storage (VD: STORAGE_KV_REST_API_URL)
+const envBySuffix = (suffix) => {
+  const key = Object.keys(process.env).find((k) => k.endsWith(suffix) && !/READ_ONLY/.test(k) && process.env[k]);
+  return key ? process.env[key] : "";
+};
+const REDIS_URL = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL || envBySuffix("_KV_REST_API_URL") || envBySuffix("_REDIS_REST_URL");
+const REDIS_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN || envBySuffix("_KV_REST_API_TOKEN") || envBySuffix("_REDIS_REST_TOKEN");
 
 const LIST_KEY = "leads"; // danh sách id, mới nhất ở đầu
 const MAX_LEADS = 2000;
