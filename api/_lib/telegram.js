@@ -1,9 +1,14 @@
 /**
  * Gửi tin Telegram cho admin (không bắt buộc).
- * Biến môi trường: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+ * Biến môi trường: TELEGRAM_BOT_TOKEN (bắt buộc, giữ bí mật).
+ * Nơi nhận tin: nhóm "Phiếu Khám TangCoGiamMo" (GROUP_CHAT_ID bên dưới).
+ *   Muốn đổi nhóm: sửa GROUP_CHAT_ID, hoặc đặt biến TELEGRAM_GROUP_ID trên Vercel (ưu tiên hơn).
+ *   ID nhóm không phải mã bí mật (không có token thì không dùng được).
  */
+const GROUP_CHAT_ID = "-5368699087";
+const CHAT_ID = process.env.TELEGRAM_GROUP_ID || GROUP_CHAT_ID || process.env.TELEGRAM_CHAT_ID;
 
-export const hasTelegram = () => Boolean(process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_ID);
+export const hasTelegram = () => Boolean(process.env.TELEGRAM_BOT_TOKEN && CHAT_ID);
 
 // Escape ký tự đặc biệt cho parse_mode HTML của Telegram
 export const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -11,7 +16,7 @@ export const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "
 // Gửi 1–3 ảnh dáng người (multipart, ảnh JPEG dạng base64 từ trang web): 1 ảnh -> sendPhoto, 2–3 ảnh -> album
 export async function sendPhotos(photos, caption) {
   const form = new FormData();
-  form.append("chat_id", process.env.TELEGRAM_CHAT_ID);
+  form.append("chat_id", CHAT_ID);
   if (photos.length === 1) {
     form.append("caption", caption);
     form.append("parse_mode", "HTML");
@@ -37,7 +42,7 @@ export async function notifyAdmin(html) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      chat_id: process.env.TELEGRAM_CHAT_ID,
+      chat_id: CHAT_ID,
       text: html,
       parse_mode: "HTML",
       disable_web_page_preview: true,
