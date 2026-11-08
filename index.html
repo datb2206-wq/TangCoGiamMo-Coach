@@ -41,11 +41,11 @@
   <!-- SITE-CONFIG:START (tự sinh bởi npm run build:css, đừng sửa tay) -->
   <script>if (!window.SITE_CONFIG) {
 window.SITE_CONFIG = {
-  PT_NAME: "Coach Hoàng Nam",
+  PT_NAME: "Coach Tuấn Đạt",
   EXPERIENCE_YEARS: 10,
   ZALO_PHONE: "0911811010",
   FANPAGE_ID: "fitcoach",
-  EMAIL: "hello@fitcoach.vn",
+  EMAIL: "hotro@tangcogiammo.com",
   META_PIXEL_ID: "",
   PRICING: {
     gymPT: {
@@ -215,7 +215,7 @@ window.SITE_CONFIG = {
           <div class="rounded-[1.75rem] bg-white p-4 shadow-card ring-1 ring-black/5 sm:p-5">
             <!-- đầu khung chat -->
             <div class="flex items-center gap-3 border-b border-gray-100 pb-3">
-              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary text-sm font-bold text-white" data-pt-initials>HN</span>
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary text-sm font-bold text-white" data-pt-initials>TĐ</span>
               <div class="min-w-0 flex-1">
                 <p class="truncate text-sm font-semibold text-heading"><span data-pt-name>Coach</span> <span class="font-medium text-gray-400">(<span data-years>10</span> Năm KN)</span></p>
                 <p class="flex items-center gap-1.5 text-xs"><span class="h-2 w-2 rounded-full bg-leaf"></span>Đang theo sát bạn qua Zalo</p>
@@ -239,7 +239,7 @@ window.SITE_CONFIG = {
             </ul>
             <!-- tin nhắn Coach -->
             <div class="mt-3 flex gap-2">
-              <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-primary text-[10px] font-bold text-white" data-pt-initials>HN</span>
+              <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-primary text-[10px] font-bold text-white" data-pt-initials>TĐ</span>
               <p class="rounded-2xl rounded-tl-sm bg-light px-3 py-2 text-[13px] text-heading">Bữa trưa chuẩn lượng rồi nha 👍 Tối nhớ uống đủ 2 lít nước!</p>
             </div>
           </div>
@@ -911,7 +911,7 @@ window.SITE_CONFIG = {
     const YEARS = CFG.EXPERIENCE_YEARS || 10;
     $$("[data-pt-name]").forEach((el) => (el.textContent = COACH));
     $$("[data-years]").forEach((el) => (el.textContent = YEARS));
-    // Chữ viết tắt trên ảnh đại diện: "Coach Hoàng Nam" -> "HN"
+    // Chữ viết tắt trên ảnh đại diện: "Coach Tuấn Đạt" -> "TĐ"
     const INITIALS = COACH.replace(/^(coach|pt)\s+/i, "").split(/\s+/).filter(Boolean).slice(-2).map((w) => w[0]).join("").toUpperCase() || "C";
     $$("[data-pt-initials]").forEach((el) => (el.textContent = INITIALS));
 

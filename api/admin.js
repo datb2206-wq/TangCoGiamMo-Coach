@@ -13,7 +13,7 @@
  *   ADMIN_EMAIL, ADMIN_PASSWORD                      – email + mật khẩu đăng nhập trang admin (bắt buộc)
  *   UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN – nơi lưu khách (bắt buộc)
  *   ANTHROPIC_API_KEY, CLAUDE_MODEL                  – chỉ cần nếu muốn dùng nút "Viết lại bằng AI"
- *   COACH_NAME                                       – tên PT ký cuối tin nhắn AI viết (không bắt buộc, mặc định "Coach Hoàng Nam")
+ *   COACH_NAME                                       – tên PT ký cuối tin nhắn AI viết (không bắt buộc, mặc định "Coach Tuấn Đạt")
  */
 import { createHash, timingSafeEqual } from "node:crypto";
 import Anthropic from "@anthropic-ai/sdk";
@@ -23,7 +23,7 @@ import { slugify, postSlug, isCategory } from "./_lib/blog.js";
 
 const MODEL = process.env.CLAUDE_MODEL || "claude-opus-5-5";
 const LANGUAGE_NAMES = { vi: "Vietnamese", en: "English", zh: "Simplified Chinese" };
-const COACH_NAME = process.env.COACH_NAME || "Coach Hoàng Nam";
+const COACH_NAME = process.env.COACH_NAME || "Coach Tuấn Đạt";
 
 // So sánh an toàn (không lộ độ dài / thời gian)
 function sameSecret(given, expected) {

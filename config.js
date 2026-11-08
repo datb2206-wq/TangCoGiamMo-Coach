@@ -5,7 +5,7 @@
 window.SITE_CONFIG = {
   /* ---------- PT ---------- */
   // Tên Coach hiện trên web (đầu trang, popup cảm ơn, chân trang, blog). Đổi tên ở đây là cả trang đổi theo.
-  PT_NAME: "Coach Hoàng Nam",
+  PT_NAME: "Coach Tuấn Đạt",
   // Số năm kinh nghiệm: hiện ở nhãn đầu trang, thanh số liệu, chân trang, FAQ, blog
   EXPERIENCE_YEARS: 10,
 
@@ -14,7 +14,7 @@ window.SITE_CONFIG = {
   ZALO_PHONE: "0911811010",
   // ID / tên trang Facebook (Fanpage): m.me/<ID> mở Messenger, facebook.com/<ID> mở trang
   FANPAGE_ID: "fitcoach",
-  EMAIL: "hello@fitcoach.vn",
+  EMAIL: "hotro@tangcogiammo.com",
 
   /* ---------- Quảng cáo Facebook ---------- */
   // Dán ID Meta Pixel (dãy số trong Events Manager). Để trống "" = chưa bật Pixel.
