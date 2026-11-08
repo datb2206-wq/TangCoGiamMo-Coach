@@ -44,7 +44,7 @@ window.SITE_CONFIG = {
   PT_NAME: "Coach Tuấn Đạt",
   EXPERIENCE_YEARS: 10,
   ZALO_PHONE: "0911811010",
-  FANPAGE_ID: "fitcoach",
+  FANPAGE_ID: "100091672211550",
   EMAIL: "hotro@tangcogiammo.com",
   META_PIXEL_ID: "",
   PRICING: {
@@ -904,7 +904,8 @@ window.SITE_CONFIG = {
     const LINKS = {
       zalo: "https://zalo.me/" + zaloPhone,
       messenger: "https://m.me/" + (CFG.FANPAGE_ID || ""),
-      facebook: "https://facebook.com/" + (CFG.FANPAGE_ID || ""),
+      // ID dạng số -> facebook.com/profile.php?id=…, dạng tên -> facebook.com/<tên>
+      facebook: /^\d+$/.test(CFG.FANPAGE_ID || "") ? "https://www.facebook.com/profile.php?id=" + CFG.FANPAGE_ID : "https://www.facebook.com/" + (CFG.FANPAGE_ID || ""),
       email: "mailto:" + (CFG.EMAIL || ""),
     };
     $$("[data-link]").forEach((a) => (a.href = LINKS[a.dataset.link] || "#"));

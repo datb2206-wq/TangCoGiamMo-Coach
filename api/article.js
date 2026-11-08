@@ -137,7 +137,7 @@ function layout({ title, description, canonical, image, type = "website", jsonLd
     (function () {
       var C = window.SITE_CONFIG || {};
       var zalo = String(C.ZALO_PHONE || "").replace(/\\D/g, "");
-      var links = { zalo: "https://zalo.me/" + zalo, messenger: "https://m.me/" + (C.FANPAGE_ID || ""), facebook: "https://facebook.com/" + (C.FANPAGE_ID || "") };
+      var links = { zalo: "https://zalo.me/" + zalo, messenger: "https://m.me/" + (C.FANPAGE_ID || ""), facebook: /^\d+$/.test(C.FANPAGE_ID || "") ? "https://www.facebook.com/profile.php?id=" + C.FANPAGE_ID : "https://www.facebook.com/" + (C.FANPAGE_ID || "") };
       document.querySelectorAll("[data-link]").forEach(function (a) { a.href = links[a.dataset.link] || "#"; });
       document.querySelectorAll("[data-pt-name]").forEach(function (el) { el.textContent = C.PT_NAME || "Coach"; });
       document.querySelectorAll("[data-years]").forEach(function (el) { el.textContent = C.EXPERIENCE_YEARS || 10; });

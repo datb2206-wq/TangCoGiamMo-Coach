@@ -12,8 +12,9 @@ window.SITE_CONFIG = {
   /* ---------- Liên hệ ---------- */
   // Số Zalo của PT (10 số, viết liền). Nút Zalo nổi + nút "Mở Zalo" sau khi gửi form dùng số này.
   ZALO_PHONE: "0911811010",
-  // ID / tên trang Facebook (Fanpage): m.me/<ID> mở Messenger, facebook.com/<ID> mở trang
-  FANPAGE_ID: "fitcoach",
+  // ID / tên trang Facebook (Fanpage): dãy số trong link profile.php?id=… hoặc tên trang (facebook.com/<tên>)
+  // m.me/<ID> mở Messenger, link Fanpage tự tạo từ ID này
+  FANPAGE_ID: "100091672211550",
   EMAIL: "hotro@tangcogiammo.com",
 
   /* ---------- Quảng cáo Facebook ---------- */
