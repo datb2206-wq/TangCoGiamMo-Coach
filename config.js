@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
 
   /* ---------- Liên hệ ---------- */
   // Số Zalo của PT (10 số, viết liền). Nút Zalo nổi + nút "Mở Zalo" sau khi gửi form dùng số này.
-  ZALO_PHONE: "0900000000",
+  ZALO_PHONE: "0911811010",
   // ID / tên trang Facebook (Fanpage): m.me/<ID> mở Messenger, facebook.com/<ID> mở trang
   FANPAGE_ID: "fitcoach",
   EMAIL: "hello@fitcoach.vn",
