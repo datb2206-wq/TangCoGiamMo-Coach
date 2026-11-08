@@ -85,6 +85,7 @@ window.SITE_CONFIG = {
    * Ảnh để trong thư mục images/ket-qua/ (nên dùng .webp, rộng ~1000px). Thêm học viên mới: chép 1 khối { ... } rồi sửa số.
    *   before / after : cân nặng trước – sau (kg)      time : thời gian ("3 tháng", "36 buổi"…)
    *   who            : "Nam" / "Nữ"                    images : 1 hoặc nhiều góc chụp (mỗi góc 1 ảnh ghép trước–sau)
+   *   tall: true     : thêm vào ảnh khi ảnh là khổ DỌC (VD 894x1080) để không bị cắt mất chữ
    * Ảnh chụp màn hình tin nhắn Zalo học viên báo cáo: { type: "zalo", image: "images/ket-qua/zalo-1.webp", caption: "Báo cáo bữa trưa ngày 12" }
    */
   // ⚠️ CHỈ dùng ảnh của học viên do chính PT kèm, đã xin phép và che mặt. Không dùng ảnh lấy từ nơi khác.
@@ -98,5 +99,14 @@ window.SITE_CONFIG = {
     { who: "Chị L.", before: 56.7, after: 52.2, time: "25 ngày", images: [{ src: "images/ket-qua/nu-567-522-25ngay.webp", label: "Mặt ngang" }] },
     { who: "Anh H.", before: 69.3, after: 63.7, time: "45 ngày", images: [{ src: "images/ket-qua/nam-693-637-45ngay.webp", label: "Mặt ngang" }] },
     { who: "Chị M.", before: 55, after: 52, time: "45 ngày", images: [{ src: "images/ket-qua/nu-55-52-45ngay.webp", label: "Mặt trước" }] },
+    { who: "Học viên", before: 57, after: 54.5, time: "31 buổi", images: [{ src: "images/ket-qua/nu-57-545-31buoi-v2.webp", label: "Mặt ngang", tall: true }] },
+    { who: "Học viên", before: 56.7, after: 52.2, time: "40 buổi", images: [{ src: "images/ket-qua/nu-567-522-40buoi-v2.webp", label: "Mặt trước", tall: true }] },
+    { who: "Học viên", before: 53.6, after: 52, time: "26 buổi", images: [{ src: "images/ket-qua/nu-536-52-26buoi-v2.webp", label: "Mặt ngang", tall: true }] },
+    { who: "Học viên", before: 53.1, after: 51.8, time: "25 buổi", images: [{ src: "images/ket-qua/nu-531-518-25buoi-v2.webp", label: "Mặt trước", tall: true }] },
+    { who: "Học viên", before: 65, after: 60, time: "42 buổi", images: [{ src: "images/ket-qua/nu-65-60-42buoi-v2.webp", label: "Mặt ngang", tall: true }] },
+    { who: "Học viên", before: 48.8, after: 47.4, time: "25 buổi", images: [{ src: "images/ket-qua/nu-488-474-25buoi-v2.webp", label: "Mặt ngang", tall: true }] },
+    { who: "Học viên", before: 63, after: 60.6, time: "30 buổi", images: [{ src: "images/ket-qua/nu-63-606-30buoi-v2.webp", label: "Mặt ngang", tall: true }] },
+    { who: "Học viên", before: 69.3, after: 63.7, time: "45 buổi", images: [{ src: "images/ket-qua/nam-693-637-45buoi-v2.webp", label: "Mặt trước", tall: true }] },
+    { who: "Học viên", before: 63, after: 60, time: "33 buổi", images: [{ src: "images/ket-qua/nu-63-60-33buoi-v2.webp", label: "Mặt ngang", tall: true }] },
   ],
 };
