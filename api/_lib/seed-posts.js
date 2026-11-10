@@ -309,6 +309,108 @@ Bạn chưa cần ăn kiêng khắt khe. Chỉ cần **đủ 3 bữa chính, m�
 
 Tuần đầu ở phòng Gym chỉ cần **3 buổi, tập toàn thân, tạ vừa sức, kỹ thuật đúng**. Giữ được nhịp này 3–4 tuần, bạn sẽ thấy cơ thể khỏe hơn và sẵn sàng tăng dần độ khó. Nếu muốn có giáo án riêng theo thể trạng và mục tiêu, Coach sẽ lên lịch tập và thực đơn cho bạn, theo sát mỗi ngày qua Zalo.`,
   },
+  {
+    slug: "thuc-don-com-van-phong-giam-can",
+    category: "thuc-don",
+    image: "/images/bai-viet/thuc-don-com-van-phong-giam-can.jpg",
+    publishedAt: "2026-11-10T04:05:00.000Z",
+    title: "Thực Đơn Cơm Văn Phòng Giảm Cân: 5 Hộp Cơm Mang Đi Làm Dễ Nấu, No Lâu",
+    excerpt: "Thực đơn cơm văn phòng giảm cân với 5 hộp cơm mẫu từ đồ ăn chợ Việt, mỗi hộp khoảng 450–550 kcal, đủ đạm, nhiều rau, nấu tối hôm trước là sáng mang đi làm.",
+    content: `Một **thực đơn cơm văn phòng giảm cân** tốt không cần ức gà luộc nhạt nhẽo mỗi ngày. Chỉ cần hộp cơm có **đúng lượng cơm, đủ đạm và thật nhiều rau**, bạn vẫn ăn ngon, no đến chiều và giảm mỡ đều đặn. Bài này gợi ý cách chia hộp cơm, 5 hộp cơm mẫu cho cả tuần làm việc và mẹo nấu nhanh vào buổi tối.
+
+## Vì sao bữa trưa văn phòng dễ làm tăng cân?
+
+Bữa trưa ở công ty thường là bữa "ăn vội": cơm hàng, cơm hộp đặt qua ứng dụng, hoặc bún, phở gần chỗ làm. Theo ước tính, một suất cơm văn phòng bên ngoài (cơm + 1 món mặn + ít rau) có thể khoảng **550–700 kcal**, nhiều dầu mỡ, nhiều cơm nhưng lại ít rau và ít đạm nạc.
+
+Thêm vào đó là những thói quen rất phổ biến:
+
+- Uống thêm ly trà sữa hoặc cà phê sữa buổi chiều (khoảng 120–450 kcal tùy loại)
+- Ăn vặt bánh kẹo ở bàn làm việc khi buồn ngủ
+- Ngồi gần như cả ngày, vận động rất ít
+
+Tự mang cơm giúp bạn **kiểm soát lượng dầu, lượng cơm và nguồn đạm**, đồng thời tiết kiệm chi phí.
+
+## Nguyên tắc chia hộp cơm văn phòng giảm cân
+
+Hãy hình dung hộp cơm chia làm 3 phần, gần giống quy tắc "đĩa ăn cân bằng":
+
+1. **Một nửa hộp là rau**: luộc, hấp, xào ít dầu. Rau giúp no lâu mà ít calo.
+2. **Một phần tư là đạm**: khoảng 100–150 g thịt nạc, cá, tôm, ức gà, hoặc 2 quả trứng, hoặc 1 bìa đậu phụ to.
+3. **Một phần tư là tinh bột**: khoảng 100–150 g cơm (gần 2/3 đến 1 bát cơm vừa), hoặc khoai lang, cơm gạo lứt.
+
+Với cách chia này, một hộp cơm thường rơi vào khoảng **450–550 kcal** (ước tính), phù hợp với nhiều người đang giảm mỡ. Nam giới hoặc người tập nặng có thể tăng phần cơm thêm khoảng nửa bát.
+
+Lượng ăn phù hợp cho riêng bạn còn tùy chiều cao, cân nặng và mức vận động. Bạn có thể tự tính nhanh bằng công cụ Tính Calo trên trang chủ.
+
+## 5 hộp cơm mẫu cho 5 ngày làm việc
+
+Các mức calo dưới đây là **ước tính** cho khẩu phần khoảng 120 g cơm; thực tế còn tùy cách nấu và lượng dầu.
+
+### Thứ 2: Cơm ức gà áp chảo + bông cải luộc
+
+- 120 g cơm trắng
+- 150 g ức gà ướp tỏi, tiêu, nước mắm, áp chảo ít dầu
+- Bông cải xanh và cà rốt luộc
+- Ước tính: khoảng 450–500 kcal
+
+### Thứ 3: Cơm cá basa kho + cải ngọt
+
+- 120 g cơm
+- 150 g cá basa kho tộ, giảm đường và bớt nước kho
+- Cải ngọt luộc hoặc xào tỏi ít dầu
+- Ước tính: khoảng 450–550 kcal
+
+### Thứ 4: Cơm đậu phụ sốt cà chua + trứng luộc
+
+- 120 g cơm
+- 1 bìa đậu phụ to sốt cà chua, 1 quả trứng luộc
+- Su su, bí xanh luộc
+- Ước tính: khoảng 450–500 kcal. Đây là hộp cơm rẻ nhất trong tuần.
+
+### Thứ 5: Cơm thịt bò xào hành tây + dưa chuột
+
+- 120 g cơm
+- 100 g thịt bò nạc xào hành tây, ớt chuông ít dầu
+- Dưa chuột, cà chua thái lát
+- Ước tính: khoảng 500–550 kcal
+
+### Thứ 6: Cơm gạo lứt + thịt lợn nạc rim + rau muống
+
+- 120 g cơm gạo lứt (hoặc trộn nửa gạo trắng nửa gạo lứt)
+- 120 g thịt lợn nạc thăn rim, bớt đường
+- Rau muống luộc
+- Ước tính: khoảng 500–550 kcal
+
+Nếu buổi chiều hay đói, hãy mang thêm **1 hũ sữa chua không đường** hoặc **1 quả chuối** thay cho bánh kẹo.
+
+## Mẹo nấu nhanh và bảo quản cơm hộp an toàn
+
+- **Nấu tối hôm trước**: nấu bữa tối nhiều hơn một chút, chia ngay 1 phần vào hộp trước khi ăn.
+- **Sơ chế cuối tuần**: mua ức gà, thịt nạc theo cân, chia túi nhỏ để ngăn đá; tối hôm trước chuyển xuống ngăn mát cho rã đông.
+- **Để nguội rồi đậy nắp**, cho vào tủ lạnh ngay, sáng mang đi làm và cất tủ lạnh ở công ty nếu có.
+- **Hâm nóng kỹ** trước khi ăn. Rau xanh luộc nên để ngăn riêng hoặc ăn trong ngày để không bị úa, đổi màu.
+- Dùng hộp thủy tinh hoặc hộp nhựa ghi rõ dùng được với lò vi sóng.
+
+## Ăn cơm văn phòng có giảm cân được không? Câu hỏi thường gặp
+
+**Không có thời gian nấu thì có giảm cân được không?** Được. Khi đặt cơm bên ngoài, hãy chọn món luộc, hấp, nướng, xin thêm rau, bớt cơm còn khoảng 2/3 và hạn chế nước sốt, da gà, mỡ.
+
+**Có nên bỏ cơm để giảm cân nhanh hơn?** Không nên. Bỏ hẳn tinh bột dễ làm bạn mệt, khó tập trung khi làm việc và dễ ăn bù vào buổi tối. Giảm lượng cơm hợp lý thường hiệu quả và bền hơn.
+
+**Ăn trưa xong có nên nằm ngủ ngay?** Nên đi lại nhẹ vài phút rồi mới nghỉ trưa. Ngủ trưa ngắn khoảng 15–30 phút giúp buổi chiều tỉnh táo hơn.
+
+**Mỗi tuần nên giảm bao nhiêu cân?** Mức tham khảo an toàn với nhiều người là khoảng **0,5–1 kg mỗi tuần**. Giảm quá nhanh dễ mất cơ và dễ tăng lại.
+
+## Lưu ý khi áp dụng thực đơn
+
+- Đây là thực đơn mẫu cho người trưởng thành khỏe mạnh. Nếu bạn có bệnh dạ dày, tiểu đường, bệnh thận, đang mang thai hoặc cho con bú, hãy hỏi ý kiến bác sĩ trước khi thay đổi chế độ ăn.
+- Hộp cơm trưa chỉ là một phần. Bữa sáng và bữa tối cũng cần đủ đạm, nhiều rau và không ăn quá no trước khi ngủ.
+- Để giữ cơ khi giảm mỡ, hãy kết hợp **tập kháng lực 3–4 buổi/tuần**, tại nhà hoặc phòng Gym, và đi bộ nhiều hơn trong ngày (đi cầu thang, đứng dậy vận động mỗi giờ).
+
+## Kết luận
+
+Một thực đơn cơm văn phòng giảm cân hiệu quả chỉ cần **nửa hộp rau, một phần tư đạm, một phần tư cơm**, nấu ít dầu và chuẩn bị từ tối hôm trước. Duy trì đều đặn vài tuần, bạn sẽ thấy cơ thể nhẹ nhõm hơn mà không phải nhịn đói. Nếu muốn có thực đơn và giáo án tính riêng theo chỉ số cơ thể, lịch làm việc và món bạn thích, Coach sẽ lên kế hoạch cho bạn và theo sát mỗi ngày qua Zalo.`,
+  },
 ].map((p, i) => ({
   id: `seed-${i + 1}`,
   seed: true,
