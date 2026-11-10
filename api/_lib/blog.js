@@ -27,7 +27,9 @@ const sortPosts = (a, b) => (b.pinned ? 1 : 0) - (a.pinned ? 1 : 0) || new Date(
 // Bài đã đăng + bài nền tảng (SEED_POSTS). Bài admin đăng trùng đường dẫn sẽ thay bài nền tảng.
 export function withSeeds(posts) {
   const taken = new Set(posts.map(postSlug));
-  return [...posts, ...SEED_POSTS.filter((p) => !taken.has(p.slug))].sort(sortPosts);
+  // Bài nền tảng có publishedAt ở tương lai = bài HẸN GIỜ: chỉ hiện khi tới giờ
+  const now = Date.now();
+  return [...posts, ...SEED_POSTS.filter((p) => !taken.has(p.slug) && new Date(p.publishedAt).getTime() <= now)].sort(sortPosts);
 }
 
 export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
