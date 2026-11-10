@@ -254,7 +254,7 @@ Bạn vẫn ăn được món Việt quen thuộc khi giảm mỡ. Chỉ cần b
   {
     slug: "nguoi-moi-tap-gym-tuan-dau-nen-tap-gi",
     category: "tap-gym",
-    image: "/images/minh-hoa/03.webp",
+    image: "/images/bai-viet/nguoi-moi-tap-gym-tuan-dau-nen-tap-gi.jpg",
     publishedAt: "2026-11-10T04:00:00.000Z",
     title: "Người Mới Tập Gym Tuần Đầu Nên Tập Gì? Lịch 3 Buổi Dễ Theo, Không Đau Cơ Quá Mức",
     excerpt: "Tuần đầu vào phòng Gym dễ bị choáng vì quá nhiều máy và bài tập. Lịch 3 buổi toàn thân dưới đây giúp bạn làm quen kỹ thuật, không đau cơ quá mức và đủ sức đi tiếp những tuần sau.",
