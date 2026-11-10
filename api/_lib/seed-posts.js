@@ -251,6 +251,64 @@ Một ly trà sữa có thể bằng cả một bữa ăn chính. Nếu thèm, h
 
 Bạn vẫn ăn được món Việt quen thuộc khi giảm mỡ. Chỉ cần biết món nào nhiều calo để **cân đối trong ngày** là đủ. Coach sẽ giúp bạn xây thực đơn từ chính những món bạn hay ăn.`,
   },
+  {
+    slug: "nguoi-moi-tap-gym-tuan-dau-nen-tap-gi",
+    category: "tap-gym",
+    image: "/images/minh-hoa/03.webp",
+    publishedAt: "2026-11-10T04:00:00.000Z",
+    title: "Người Mới Tập Gym Tuần Đầu Nên Tập Gì? Lịch 3 Buổi Dễ Theo, Không Đau Cơ Quá Mức",
+    excerpt: "Tuần đầu vào phòng Gym dễ bị choáng vì quá nhiều máy và bài tập. Lịch 3 buổi toàn thân dưới đây giúp bạn làm quen kỹ thuật, không đau cơ quá mức và đủ sức đi tiếp những tuần sau.",
+    content: `Ngày đầu vào phòng Gym, nhiều người hoặc tập quá sức vì hào hứng, hoặc đi lòng vòng không biết bắt đầu từ đâu. Cả hai đều dễ dẫn tới bỏ cuộc sau một tuần. Mục tiêu của **tuần đầu tiên** không phải là đốt thật nhiều mỡ, mà là **làm quen kỹ thuật, làm quen phòng tập và tạo thói quen đi tập đều**.
+
+## Tuần đầu nên tập bao nhiêu buổi?
+
+**3 buổi/tuần, cách ngày** là vừa đủ cho người mới, ví dụ Thứ 2 – Thứ 4 – Thứ 6. Ngày nghỉ giúp cơ hồi phục, nhờ đó buổi sau bạn tập tốt hơn. Mỗi buổi khoảng **45–60 phút**, kể cả khởi động và giãn cơ.
+
+## Vì sao người mới nên tập toàn thân?
+
+Thay vì chia "hôm nay tập ngực, mai tập chân", người mới nên **tập toàn thân trong mỗi buổi**:
+
+- Mỗi nhóm cơ được tập 3 lần/tuần, học kỹ thuật nhanh hơn
+- Mỗi buổi tập nhẹ hơn, ít bị đau cơ dữ dội
+- Lỡ nghỉ 1 buổi thì cũng không bỏ sót nhóm cơ nào
+
+## Lịch tập mẫu cho mỗi buổi
+
+Khởi động 5–10 phút: đạp xe hoặc đi bộ dốc nhẹ, xoay khớp vai, hông, gối.
+
+1. **Goblet squat** (cầm 1 tạ đơn trước ngực, ngồi xuống): 3 hiệp × 10–12 lần
+2. **Đẩy ngực với máy** (chest press): 3 hiệp × 10–12 lần
+3. **Kéo cáp ngồi** (seated cable row): 3 hiệp × 10–12 lần
+4. **Đạp đùi với máy** (leg press): 3 hiệp × 10–12 lần
+5. **Kéo xô** (lat pulldown): 3 hiệp × 10–12 lần
+6. **Plank**: 3 lần × 20–30 giây
+
+Nghỉ **60–90 giây** giữa các hiệp. Cuối buổi có thể đi bộ nhanh trên máy 10 phút, rồi giãn cơ 5 phút.
+
+## Chọn mức tạ thế nào cho đúng?
+
+Chọn mức tạ mà bạn làm được đủ số lần với **kỹ thuật chuẩn**, và khi xong hiệp vẫn còn sức làm thêm khoảng **2–3 lần nữa**. Nếu phải giật người, cong lưng hay nín thở mới nâng được, tức là tạ đang quá nặng. Tuần đầu, **nhẹ một chút còn hơn nặng quá**.
+
+## Đau cơ sau buổi đầu có bình thường không?
+
+Cơ hơi ê ẩm 1–2 ngày sau buổi tập đầu là bình thường, nhất là ở đùi và mông. Đi bộ nhẹ, ngủ đủ và uống đủ nước sẽ giúp cơ hồi phục nhanh. Nhưng nếu thấy **đau nhói ở khớp**, sưng hoặc đau kéo dài nhiều ngày, hãy nghỉ tập và hỏi ý kiến bác sĩ.
+
+## 5 lỗi người mới hay mắc
+
+1. Tập quá nhiều bài, quá nhiều hiệp ngay buổi đầu
+2. Bỏ khởi động, vào là nâng tạ ngay
+3. Chọn tạ theo người bên cạnh thay vì theo sức mình
+4. Chỉ chạy bộ mà không tập kháng lực
+5. Ăn uống thất thường, nghĩ đi tập rồi thì ăn gì cũng được
+
+## Ăn uống trong tuần đầu
+
+Bạn chưa cần ăn kiêng khắt khe. Chỉ cần **đủ 3 bữa chính, mỗi bữa có một phần đạm** (thịt nạc, cá, trứng, đậu phụ), nhiều rau, và hạn chế nước ngọt, trà sữa. Ăn nhẹ khoảng 1–2 giờ trước buổi tập, ví dụ 1 quả chuối hoặc 1 lát bánh mì, để không bị đói hay choáng.
+
+## Kết luận
+
+Tuần đầu ở phòng Gym chỉ cần **3 buổi, tập toàn thân, tạ vừa sức, kỹ thuật đúng**. Giữ được nhịp này 3–4 tuần, bạn sẽ thấy cơ thể khỏe hơn và sẵn sàng tăng dần độ khó. Nếu muốn có giáo án riêng theo thể trạng và mục tiêu, Coach sẽ lên lịch tập và thực đơn cho bạn, theo sát mỗi ngày qua Zalo.`,
+  },
 ].map((p, i) => ({
   id: `seed-${i + 1}`,
   seed: true,
