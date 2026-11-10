@@ -313,7 +313,7 @@ Tuần đầu ở phòng Gym chỉ cần **3 buổi, tập toàn thân, tạ v�
     slug: "thuc-don-com-van-phong-giam-can",
     category: "thuc-don",
     image: "/images/bai-viet/thuc-don-com-van-phong-giam-can.jpg",
-    publishedAt: "2026-11-12T04:00:00.000Z", // hẹn đăng: thứ 5 12/11, 11:00 giờ VN
+    publishedAt: "2026-11-12T09:10:00.000Z", // hẹn đăng: thứ 5 12/11, 16:10 giờ VN (bài thứ 2 trong ngày)
     title: "Thực Đơn Cơm Văn Phòng Giảm Cân: 5 Hộp Cơm Mang Đi Làm Dễ Nấu, No Lâu",
     excerpt: "Thực đơn cơm văn phòng giảm cân với 5 hộp cơm mẫu từ đồ ăn chợ Việt, mỗi hộp khoảng 450–550 kcal, đủ đạm, nhiều rau, nấu tối hôm trước là sáng mang đi làm.",
     content: `Một **thực đơn cơm văn phòng giảm cân** tốt không cần ức gà luộc nhạt nhẽo mỗi ngày. Chỉ cần hộp cơm có **đúng lượng cơm, đủ đạm và thật nhiều rau**, bạn vẫn ăn ngon, no đến chiều và giảm mỡ đều đặn. Bài này gợi ý cách chia hộp cơm, 5 hộp cơm mẫu cho cả tuần làm việc và mẹo nấu nhanh vào buổi tối.
