@@ -600,6 +600,90 @@ Vậy tập gym bao lâu thì có hiệu quả? Bạn sẽ **thấy khỏe hơn 
 
 Nếu bạn muốn rút ngắn giai đoạn mò mẫm, hãy nhận **khám cơ thể miễn phí** để Coach Tuấn Đạt lên giáo án và thực đơn riêng, theo sát và điều chỉnh cho bạn mỗi ngày qua Zalo.`,
   },
+  {
+    slug: "1-qua-trung-bao-nhieu-calo",
+    category: "dinh-duong",
+    image: "/images/bai-viet/1-qua-trung-bao-nhieu-calo.jpg",
+    publishedAt: "2026-11-13T03:30:00.000Z",
+    title: "1 Quả Trứng Bao Nhiêu Calo? Ăn Trứng Thế Nào Để Giảm Mỡ, Tăng Cơ",
+    excerpt: "1 quả trứng bao nhiêu calo, bao nhiêu gam đạm? Bảng calo trứng gà, trứng vịt, trứng cút, trứng luộc, chiên, ốp la và cách ăn trứng đúng để giảm mỡ, tăng cơ.",
+    content: `**1 quả trứng bao nhiêu calo** là câu hỏi rất hay gặp khi bạn bắt đầu tính calo để giảm mỡ hoặc tăng cơ. Câu trả lời ngắn gọn: **1 quả trứng gà cỡ vừa (khoảng 50 g phần ăn được) có ước tính 70–75 kcal và khoảng 6–6,5 g đạm**. Nhưng con số thực tế còn thay đổi theo loại trứng, kích cỡ và cách chế biến. Bài viết này giúp bạn nắm bảng calo trứng phổ biến ở Việt Nam và cách ăn trứng hợp lý mỗi ngày.
+
+## 1 quả trứng bao nhiêu calo? Bảng calo theo loại trứng
+
+Các con số dưới đây là **mức ước tính** cho phần ăn được (đã bỏ vỏ), tổng hợp từ các bảng thành phần dinh dưỡng phổ biến. Trứng to nhỏ khác nhau nên calo sẽ chênh lệch một chút.
+
+- **Trứng gà cỡ vừa (~50 g)**: khoảng **70–75 kcal**, 6–6,5 g đạm, 4,5–5 g chất béo, gần như không có tinh bột.
+- **Trứng gà cỡ lớn (~60 g)**: khoảng **85–90 kcal**, 7–7,5 g đạm.
+- **Trứng vịt (~65–70 g)**: khoảng **120–130 kcal**, 8,5–9 g đạm, nhiều chất béo hơn trứng gà.
+- **Trứng cút (~9–10 g/quả)**: khoảng **14–16 kcal/quả**, 1,2–1,3 g đạm. 5 quả trứng cút xấp xỉ 1 quả trứng gà.
+- **Trứng vịt lộn (1 quả)**: khoảng **180–200 kcal**, tùy kích cỡ và độ phát triển của phôi.
+
+Như vậy, nếu cùng muốn nạp đạm, trứng gà thường là lựa chọn "nhẹ calo" và dễ kiểm soát nhất.
+
+## Lòng trắng và lòng đỏ: phần nào nhiều calo hơn?
+
+Một quả trứng gà cỡ vừa chia ra như sau (ước tính):
+
+- **Lòng trắng (~33 g)**: khoảng **17 kcal**, 3,5–3,6 g đạm, gần như không có chất béo.
+- **Lòng đỏ (~17 g)**: khoảng **55 kcal**, 2,7 g đạm, 4,5 g chất béo.
+
+Lòng đỏ chiếm phần lớn calo, nhưng cũng là nơi chứa nhiều **vitamin A, D, B12, choline, lutein** và khoáng chất. Vì vậy không nên bỏ hết lòng đỏ. Nếu bạn đang giảm mỡ và cần thêm đạm mà ít calo, có thể ăn **1–2 quả nguyên + thêm vài lòng trắng**.
+
+## Calo trứng thay đổi thế nào theo cách chế biến?
+
+Bản thân trứng không đổi nhiều calo khi nấu chín. Thứ làm calo tăng là **dầu, bơ, đường và đồ ăn kèm**. Ước tính cho 1 quả trứng gà cỡ vừa:
+
+1. **Trứng luộc / trứng hấp**: khoảng **70–78 kcal** – lựa chọn tốt nhất khi giảm mỡ.
+2. **Trứng ốp la (chiên ít dầu, ~1 thìa cà phê)**: khoảng **100–115 kcal**.
+3. **Trứng chiên nhiều dầu / trứng tráng**: có thể **120–150 kcal**, vì trứng thấm dầu khá nhiều.
+4. **Trứng chưng thịt, trứng cuộn**: tùy lượng thịt, dầu và nước mắm đường, thường cao hơn hẳn trứng luộc.
+5. **Bánh mì ốp la, xôi trứng**: phần bánh mì, xôi và pate mới là phần nhiều calo nhất, có thể cả bữa lên **400–550 kcal**.
+
+Mẹo nhỏ: dùng **chảo chống dính và xịt/quét một lớp dầu mỏng** là cách đơn giản để cắt bớt 30–60 kcal mỗi lần chiên trứng.
+
+## Ăn trứng có giúp giảm mỡ không?
+
+Trứng không có "tác dụng đốt mỡ" thần kỳ. Bạn giảm mỡ khi **tổng năng lượng nạp vào thấp hơn năng lượng tiêu hao** trong thời gian đủ dài. Tuy vậy, trứng là thực phẩm rất hữu ích trong thực đơn giảm mỡ vì:
+
+- **Nhiều đạm so với calo**: giúp no lâu, hạn chế ăn vặt.
+- **Rẻ, dễ mua, dễ nấu**: hợp với người bận rộn, ăn cơm nhà hoặc mang cơm đi làm.
+- **Dễ kiểm soát khẩu phần**: đếm theo quả nên tính calo rất nhanh.
+
+Ví dụ một bữa sáng giảm mỡ đơn giản: **2 quả trứng luộc + 1 lát bánh mì nguyên cám + ít rau dưa leo** – ước tính khoảng 250–300 kcal, khoảng 15–17 g đạm.
+
+## Ăn trứng để tăng cơ: bao nhiêu là hợp lý?
+
+Muốn tăng cơ, bạn cần tập kháng lực đều và **ăn đủ đạm cả ngày**, thường ở mức khoảng **1,6–2,2 g đạm/kg cân nặng/ngày** tùy mục tiêu. Trứng là nguồn đạm chất lượng cao, có đủ các axit amin thiết yếu.
+
+Tuy nhiên, chỉ trứng thôi thì khó đủ đạm. Ví dụ người 60 kg cần khoảng 100–130 g đạm/ngày, trong khi 3 quả trứng chỉ cho khoảng 18–20 g. Hãy kết hợp trứng với **ức gà, cá, thịt nạc, đậu phụ, sữa chua, sữa** để đạt đủ lượng đạm và đa dạng dinh dưỡng.
+
+## Một ngày nên ăn mấy quả trứng?
+
+Với người trưởng thành khỏe mạnh, nhiều nghiên cứu cho thấy ăn khoảng **1–2 quả trứng mỗi ngày** nằm trong chế độ ăn cân bằng thường không gây vấn đề. Một số người tập luyện ăn 3 quả/ngày vẫn ổn nếu tổng chế độ ăn hợp lý, ít đồ chiên rán và mỡ bão hòa.
+
+Cần lưu ý:
+
+- 1 lòng đỏ trứng gà có khoảng **185 mg cholesterol**. Người có **mỡ máu cao, tiểu đường, bệnh tim mạch hoặc bệnh thận** nên hỏi bác sĩ về số lượng trứng phù hợp.
+- **Phụ nữ mang thai, trẻ nhỏ, người lớn tuổi** nên ăn trứng **nấu chín kỹ**, tránh trứng lòng đào, trứng sống để giảm nguy cơ nhiễm khuẩn.
+- Người **dị ứng trứng** cần tránh hoàn toàn.
+
+## Câu hỏi thường gặp về calo trong trứng
+
+**Ăn trứng buổi tối có mập không?** Không phải do giờ ăn. Nếu tổng calo cả ngày vẫn trong mức thâm hụt, 1–2 quả trứng luộc buổi tối không làm bạn tăng mỡ.
+
+**Trứng luộc lòng đào và luộc chín có khác calo không?** Gần như không khác. Khác biệt chủ yếu nằm ở độ an toàn thực phẩm và khẩu vị.
+
+**Trứng gà ta có ít calo hơn trứng gà công nghiệp?** Trứng gà ta thường nhỏ hơn nên mỗi quả có thể ít calo hơn một chút, nhưng tính theo gam thì giá trị dinh dưỡng khá tương đương.
+
+**Chỉ ăn trứng để giảm cân nhanh được không?** Không nên. Ăn kiêng một món dễ thiếu chất, mệt mỏi và dễ ăn bù sau đó. Hãy giữ thực đơn đủ đạm, rau, tinh bột vừa phải và chất béo tốt.
+
+## Kết luận
+
+Tóm lại, 1 quả trứng bao nhiêu calo? Một quả trứng gà cỡ vừa có ước tính **70–75 kcal và 6–6,5 g đạm**, trứng vịt khoảng **120–130 kcal**, trứng cút khoảng **14–16 kcal/quả**. Cách chế biến mới quyết định nhiều nhất: **ưu tiên luộc, hấp, chiên ít dầu**, ăn **1–2 quả mỗi ngày** trong một thực đơn cân bằng là hợp lý với đa số người khỏe mạnh.
+
+Nếu bạn muốn biết chính xác mình nên ăn bao nhiêu trứng, bao nhiêu đạm và calo mỗi ngày, hãy nhận **khám cơ thể miễn phí** để Coach Tuấn Đạt lên thực đơn và giáo án riêng, theo sát và điều chỉnh cho bạn mỗi ngày qua Zalo.`,
+  },
 ].map((p, i) => ({
   id: `seed-${i + 1}`,
   seed: true,
