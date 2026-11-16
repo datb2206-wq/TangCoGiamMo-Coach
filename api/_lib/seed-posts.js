@@ -684,6 +684,99 @@ Tóm lại, 1 quả trứng bao nhiêu calo? Một quả trứng gà cỡ vừa 
 
 Nếu bạn muốn biết chính xác mình nên ăn bao nhiêu trứng, bao nhiêu đạm và calo mỗi ngày, hãy nhận **khám cơ thể miễn phí** để Coach Tuấn Đạt lên thực đơn và giáo án riêng, theo sát và điều chỉnh cho bạn mỗi ngày qua Zalo.`,
   },
+  {
+    slug: "an-gi-buoi-toi-de-giam-can-thuc-don-com-nha",
+    category: "thuc-don",
+    image: "/images/bai-viet/an-gi-buoi-toi-de-giam-can-thuc-don-com-nha.jpg",
+    publishedAt: "2026-11-16T03:30:00.000Z",
+    title: "Ăn Gì Buổi Tối Để Giảm Cân? 7 Mâm Cơm Nhà No Lâu, Ít Calo",
+    excerpt: "Ăn gì buổi tối để giảm cân mà vẫn no, không bỏ bữa? Gợi ý 7 thực đơn bữa tối cơm nhà dễ nấu, ước tính calo từng mâm và nguyên tắc ăn tối giúp giảm mỡ bền vững.",
+    content: `**Ăn gì buổi tối để giảm cân** là băn khoăn của rất nhiều người: bỏ bữa tối thì đói, mất ngủ, hôm sau ăn bù; ăn như bình thường thì cân không nhúc nhích. Tin tốt là bạn **không cần nhịn ăn tối**. Chỉ cần chọn đúng món, đúng lượng và ăn đúng giờ, bữa tối vẫn có thể là một mâm cơm nhà ấm áp mà vẫn hỗ trợ giảm mỡ. Bài viết này đưa ra nguyên tắc ăn tối, 7 thực đơn cơm nhà mẫu và những sai lầm cần tránh.
+
+## Có nên bỏ bữa tối để giảm cân không?
+
+Giảm cân phụ thuộc chủ yếu vào **tổng năng lượng nạp vào trong cả ngày** so với năng lượng bạn tiêu hao, chứ không phải chỉ riêng bữa tối. Bỏ bữa tối có thể giúp cắt bớt calo trong ngắn hạn, nhưng thường gây ra:
+
+- Đói về đêm, khó ngủ, dễ ăn vặt lúc khuya.
+- Bữa sáng, bữa trưa hôm sau ăn nhiều hơn để bù lại.
+- Thiếu đạm nếu bạn đang tập luyện, làm giảm khả năng giữ cơ.
+
+Vì vậy, thay vì bỏ bữa, hãy **ăn tối nhẹ hơn, đủ chất và có kiểm soát**. Với đa số người đang giảm mỡ, bữa tối nên chiếm khoảng **25–30% tổng calo trong ngày**, tương đương ước tính **400–550 kcal** cho nữ và **500–700 kcal** cho nam (tùy cân nặng, mức vận động).
+
+## Nguyên tắc ăn gì buổi tối để giảm cân
+
+Một bữa tối giảm cân tốt nên dựa trên công thức đơn giản theo đĩa ăn:
+
+1. **Một nửa đĩa là rau**: rau luộc, rau xào ít dầu, canh rau. Rau nhiều chất xơ, ít calo, giúp no lâu.
+2. **Một phần tư là đạm nạc**: cá, ức gà, thịt heo nạc, tôm, trứng, đậu phụ. Mỗi bữa khoảng **100–150 g thịt cá sống** (cung cấp ước tính 20–30 g đạm).
+3. **Một phần tư là tinh bột**: khoảng **1/2 đến 1 chén cơm** (mỗi chén cơm trắng khoảng 100–150 g, ước tính 130–200 kcal). Có thể thay một phần bằng gạo lứt, khoai lang.
+4. **Chất béo vừa phải**: ưu tiên nấu bằng hấp, luộc, kho, áp chảo ít dầu; hạn chế chiên ngập dầu.
+
+Ngoài ra, hãy cố gắng **ăn tối trước khi đi ngủ khoảng 2–3 tiếng** để ngủ ngon và tiêu hóa tốt hơn.
+
+## 7 thực đơn bữa tối giảm cân bằng cơm nhà
+
+Dưới đây là 7 mâm cơm mẫu cho một người, calo là **mức ước tính** và có thể chênh lệch theo khẩu phần, cách nấu.
+
+1. **Cá basa kho tộ + canh bí xanh + rau muống luộc + 1/2 chén cơm**: khoảng 450–500 kcal. Cá kho bớt đường, chắt bớt mỡ.
+2. **Ức gà áp chảo + salad dưa leo cà chua + 1 củ khoai lang nhỏ (khoảng 150 g)**: khoảng 420–480 kcal, nhiều đạm, rất hợp ngày tập.
+3. **Đậu phụ sốt cà chua + canh cải ngọt + 2/3 chén cơm gạo lứt**: khoảng 400–450 kcal, phù hợp người thích ăn nhẹ.
+4. **Thịt heo nạc luộc + rau cải luộc chấm nước mắm tỏi + 1/2 chén cơm**: khoảng 430–480 kcal, dễ làm, ít dầu mỡ.
+5. **Canh chua cá lóc + đậu bắp luộc + 1/2 chén cơm**: khoảng 400–450 kcal, nhiều rau, nhiều nước, rất no.
+6. **Trứng hấp thịt bằm (2 trứng, 50 g thịt nạc) + bông cải xanh luộc + 1/2 chén cơm**: khoảng 450–520 kcal.
+7. **Tôm rang ít dầu + canh mồng tơi + rau sống + 2/3 chén cơm**: khoảng 450–500 kcal.
+
+Nếu bạn là nam, cao lớn hoặc vừa tập nặng, có thể tăng thêm khoảng 1/2 chén cơm hoặc 50 g thịt cá mỗi bữa.
+
+## Buổi tối nên hạn chế ăn những gì?
+
+Không có món nào là "cấm tuyệt đối", nhưng buổi tối nên hạn chế:
+
+- **Đồ chiên rán, đồ nướng nhiều dầu mỡ**: gà rán, chả giò, khoai tây chiên. Rất nhiều calo trong lượng nhỏ.
+- **Nước ngọt, trà sữa, bánh kẹo**: nhiều đường, dễ uống quá đà mà không thấy no.
+- **Bia rượu và đồ nhậu**: vừa nhiều calo, vừa kích thích ăn thêm.
+- **Mì gói, bánh mì kẹp nhiều sốt**: tiện nhưng thường ít đạm, ít rau.
+- **Ăn khuya sát giờ ngủ**: dễ ăn dư năng lượng và ảnh hưởng giấc ngủ.
+
+## Đói về đêm thì ăn gì?
+
+Nếu đã ăn tối đủ nhưng vẫn đói trước khi ngủ, bạn có thể chọn một món nhẹ khoảng **100–150 kcal**:
+
+- 1 hộp sữa chua không đường.
+- 1 ly sữa tươi không đường (khoảng 200 ml).
+- 1 quả trứng luộc.
+- 1 quả táo, ổi hoặc vài lát dưa hấu.
+- Một ít dưa leo, cà rốt.
+
+Thường xuyên đói đêm là dấu hiệu bữa tối của bạn đang **thiếu đạm hoặc thiếu rau**, hoặc tổng calo trong ngày đang cắt quá sâu.
+
+## Mẹo giúp bữa tối giảm cân dễ duy trì
+
+- **Uống một ly nước** trước bữa ăn khoảng 15–20 phút.
+- **Ăn rau và canh trước**, sau đó mới đến thịt cá và cơm.
+- **Dùng chén nhỏ** để dễ kiểm soát lượng cơm.
+- **Ăn chậm**, nhai kỹ khoảng 15–20 phút cho một bữa.
+- **Chuẩn bị trước**: luộc sẵn ức gà, rửa sẵn rau để tối về không phải gọi đồ ăn nhanh.
+- **Ngủ đủ 7–8 tiếng**: thiếu ngủ thường khiến bạn thèm ăn nhiều hơn vào hôm sau.
+
+## Câu hỏi thường gặp về ăn tối giảm cân
+
+**Ăn tối sau 7 giờ có làm tăng cân không?** Không hẳn. Điều quan trọng là tổng calo trong ngày. Tuy vậy, ăn quá muộn và sát giờ ngủ dễ khiến bạn ăn dư và ngủ kém, nên tốt nhất là ăn trước giờ ngủ 2–3 tiếng.
+
+**Buổi tối có nên ăn cơm không?** Có thể ăn. Một lượng cơm vừa phải (khoảng 1/2 đến 1 chén) cùng nhiều rau và đạm vẫn phù hợp với người giảm cân. Bỏ hẳn tinh bột dễ khiến bạn mệt và thèm ngọt.
+
+**Chỉ ăn trái cây buổi tối có giảm cân không?** Có thể làm giảm calo, nhưng thiếu đạm và dễ đói. Không nên thay cả bữa tối bằng trái cây trong thời gian dài.
+
+**Tập gym buổi tối thì ăn gì?** Ưu tiên bữa sau tập có đạm nạc (gà, cá, trứng) cùng một ít tinh bột như cơm hoặc khoai để hỗ trợ phục hồi cơ.
+
+Lưu ý: nếu bạn có bệnh lý như tiểu đường, dạ dày, thận, đang mang thai hoặc cho con bú, hãy **hỏi ý kiến bác sĩ** trước khi thay đổi chế độ ăn.
+
+## Kết luận
+
+Tóm lại, ăn gì buổi tối để giảm cân không cần cầu kỳ: **nhiều rau, đủ đạm nạc, một ít cơm, nấu ít dầu và ăn trước giờ ngủ 2–3 tiếng**. Giữ bữa tối khoảng 400–700 kcal tùy cơ thể, kết hợp với tập luyện và ngủ đủ, bạn sẽ giảm mỡ đều đặn mà không phải chịu đói.
+
+Mỗi người có cân nặng, lịch sinh hoạt và khẩu vị khác nhau, nên lượng ăn phù hợp cũng khác nhau. Nếu bạn muốn có **thực đơn và giáo án riêng** cho mình, hãy nhắn cho Coach Tuấn Đạt qua Zalo để được khám cơ thể và theo sát từng ngày.`,
+  },
 ].map((p, i) => ({
   id: `seed-${i + 1}`,
   seed: true,
