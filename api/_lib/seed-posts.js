@@ -989,6 +989,111 @@ Một **lịch tập gym cho nữ giảm mỡ** tốt là lịch bạn duy trì 
 
 Mỗi người có thể trạng, lịch làm việc và mục tiêu khác nhau. Nếu bạn muốn có **giáo án và thực đơn riêng**, hãy nhắn cho Coach Tuấn Đạt qua Zalo để được khám cơ thể và theo sát từng ngày.`,
   },
+  {
+    slug: "1-qua-chuoi-bao-nhieu-calo-an-chuoi-co-beo-khong",
+    category: "dinh-duong",
+    image: "/images/bai-viet/1-qua-chuoi-bao-nhieu-calo-an-chuoi-co-beo-khong.jpg",
+    publishedAt: "2026-11-19T03:30:00.000Z",
+    title: "1 Quả Chuối Bao Nhiêu Calo? Ăn Chuối Có Béo Không, Ăn Lúc Nào Để Giảm Mỡ",
+    excerpt: "1 quả chuối bao nhiêu calo? Bảng calo ước tính chuối tiêu, chuối tây, chuối sấy, cách ăn chuối không lo béo và thời điểm ăn chuối tốt nhất khi tập luyện giảm mỡ, tăng cơ.",
+    content: `**1 quả chuối bao nhiêu calo** là câu hỏi rất nhiều người đặt ra khi bắt đầu ăn kiêng, vì chuối ngọt, dễ ăn, rẻ và có quanh năm. Câu trả lời ngắn gọn: một quả chuối cỡ vừa chỉ khoảng **90–110 kcal (ước tính)**, tương đương chưa tới nửa chén cơm. Chuối không làm bạn béo, cái làm bạn béo là **tổng lượng calo cả ngày vượt nhu cầu**. Bài viết này giúp bạn biết chính xác mỗi loại chuối có bao nhiêu calo, ăn bao nhiêu là hợp lý và ăn vào lúc nào để hỗ trợ giảm mỡ, tăng cơ.
+
+## 1 quả chuối bao nhiêu calo? Bảng calo theo từng loại
+
+Lượng calo của chuối phụ thuộc vào loại chuối, kích thước và độ chín. Dưới đây là mức **ước tính** cho phần ăn được (đã bỏ vỏ):
+
+- **Chuối tiêu (chuối già)**: khoảng **90–100 kcal/100g**. Một quả cỡ vừa (phần ruột 100–120g) khoảng **90–115 kcal**.
+- **Chuối tây (chuối sứ)**: khoảng **65–70 kcal/100g**. Một quả vừa (khoảng 80–100g ruột) chỉ tầm **55–70 kcal**.
+- **Chuối cau, chuối ngự (quả nhỏ)**: mỗi quả thường chỉ **40–60 kcal** vì kích thước nhỏ.
+- **Chuối luộc**: calo gần như giữ nguyên so với chuối tươi cùng khối lượng, khoảng **90–120 kcal/100g** tùy loại.
+- **Chuối sấy dẻo**: khoảng **300–350 kcal/100g** vì đã mất nước, đường cô đặc lại.
+- **Chuối sấy giòn (chiên)**: có thể lên tới **500–520 kcal/100g** do ngấm dầu.
+
+Như vậy, **chuối tươi rất "nhẹ" calo**, nhưng chuối sấy, nhất là loại chiên giòn, lại là món dễ làm bạn ăn dư calo mà không nhận ra.
+
+## Thành phần dinh dưỡng trong một quả chuối
+
+Một quả chuối tiêu cỡ vừa (khoảng 118g ruột) chứa xấp xỉ:
+
+- **Carb**: khoảng 27g, trong đó đường tự nhiên khoảng 14g
+- **Chất xơ**: khoảng 3g
+- **Đạm (protein)**: khoảng 1,3g
+- **Chất béo**: dưới 0,5g
+- **Kali**: khoảng 400–420mg
+- **Vitamin B6, vitamin C, magie** với lượng đáng kể
+
+Điểm cần nhớ: chuối là **nguồn tinh bột và đường tự nhiên**, gần như không có đạm. Vì vậy chuối là món ăn kèm tốt, nhưng không thay được bữa chính giàu đạm như trứng, thịt, cá, đậu phụ.
+
+## Ăn chuối có béo không?
+
+Ăn chuối **không gây béo** nếu bạn kiểm soát tổng calo trong ngày. Một vài lý do chuối khá thân thiện với người giảm mỡ:
+
+- **Calo vừa phải**: 1 quả chỉ khoảng 100 kcal, ít hơn nhiều so với một gói bánh quy hay một ly trà sữa.
+- **Có chất xơ**: giúp no lâu hơn, hạn chế ăn vặt.
+- **Ngọt tự nhiên**: thay thế đồ ngọt, bánh kẹo, giúp bạn bớt thèm.
+- **Tiện lợi**: không cần chế biến, mang đi làm, đi tập rất dễ.
+
+Tuy nhiên, chuối vẫn có thể khiến bạn **tăng cân** nếu:
+
+1. Ăn 4–5 quả mỗi ngày mà không tính vào tổng calo.
+2. Ăn chuối kèm sữa đặc, nước cốt dừa, kem, chè chuối.
+3. Ăn chuối sấy giòn thay bữa phụ.
+4. Ăn chuối ngay sau bữa chính đã no, cộng dồn calo.
+
+## Ăn chuối lúc nào tốt nhất để giảm mỡ, tăng cơ?
+
+Thời điểm ăn không quan trọng bằng tổng lượng ăn cả ngày, nhưng có vài thời điểm giúp chuối phát huy tác dụng tốt hơn:
+
+1. **Trước tập 30–60 phút**: 1 quả chuối cung cấp năng lượng nhanh, giúp buổi tập đỡ đuối, nhất là khi bạn tập sau giờ làm.
+2. **Sau tập**: chuối kết hợp với nguồn đạm (sữa chua không đường, sữa tươi không đường, trứng, whey) giúp bù năng lượng và hỗ trợ phục hồi cơ.
+3. **Bữa phụ buổi chiều**: thay cho bánh ngọt, trà sữa, giúp bạn không quá đói khi tới bữa tối.
+4. **Bữa sáng nhanh**: chuối + 2 quả trứng luộc + 1 hộp sữa chua không đường là bữa sáng đơn giản, đủ đạm.
+
+Ăn chuối lúc đói có sao không? Với đa số người khỏe mạnh, ăn 1 quả chuối lúc bụng đói là bình thường. Nếu bạn bị **đau dạ dày, trào ngược** và thấy khó chịu, hãy ăn chuối sau khi đã ăn chút gì đó và hỏi ý kiến bác sĩ.
+
+## Người giảm cân nên ăn bao nhiêu chuối một ngày?
+
+Với người đang giảm mỡ, mức hợp lý thường là **1–2 quả chuối mỗi ngày**, tương đương khoảng 100–200 kcal, miễn là bạn đã tính vào tổng calo của ngày.
+
+Một cách áp dụng dễ:
+
+- Ngày nghỉ: **1 quả** làm bữa phụ.
+- Ngày tập: **1 quả trước tập**, có thể thêm **1 quả sau tập** kèm nguồn đạm.
+- Nếu ăn thêm chuối, hãy **bớt cơm** ở bữa gần đó, ví dụ bớt khoảng nửa chén cơm cho mỗi quả chuối tiêu.
+
+Người đang **tăng cơ** cần nhiều năng lượng hơn có thể ăn 2–3 quả mỗi ngày, kết hợp với sữa, yến mạch, bơ đậu phộng để tăng calo một cách lành mạnh.
+
+## Chuối xanh hay chuối chín tốt hơn cho người giảm cân?
+
+- **Chuối hơi xanh, mới chín tới**: có nhiều **tinh bột kháng** hơn, ít ngọt hơn, giúp no lâu và đường huyết tăng chậm hơn.
+- **Chuối chín kỹ (vỏ có đốm nâu)**: ngọt hơn vì tinh bột đã chuyển thành đường, dễ tiêu, hợp ăn trước tập để lấy năng lượng nhanh.
+
+Về calo, hai loại chênh nhau không đáng kể. Bạn chọn loại nào mình thích và ăn được đều đặn. Người **tiểu đường** nên ưu tiên chuối vừa chín, ăn lượng nhỏ, kèm đạm hoặc chất béo tốt và cần theo hướng dẫn của bác sĩ.
+
+## Câu hỏi thường gặp về calo trong chuối
+
+**Ăn chuối buổi tối có béo không?** Không, nếu tổng calo cả ngày vẫn trong mức thiếu hụt. Một quả chuối buổi tối vẫn tốt hơn nhiều so với mì gói hay bánh ngọt.
+
+**Ăn chuối thay cơm có giảm cân được không?** Chỉ nên thay một phần cơm, không nên thay cả bữa, vì chuối gần như không có đạm. Thiếu đạm lâu ngày dễ mất cơ, mệt mỏi và giảm cân chậm lại.
+
+**Sinh tố chuối có béo không?** Sinh tố chuối với sữa tươi không đường, không thêm đường hay sữa đặc thì khoảng 200–250 kcal (ước tính). Thêm sữa đặc, đường hay kem thì calo tăng gấp rưỡi tới gấp đôi.
+
+**Người bị bệnh thận có ăn chuối được không?** Chuối giàu kali, người bệnh thận hoặc cần hạn chế kali phải hỏi bác sĩ trước khi ăn thường xuyên.
+
+## Những sai lầm khi ăn chuối để giảm cân
+
+- Nghĩ chuối "healthy" nên ăn bao nhiêu cũng được.
+- Chỉ ăn chuối cả ngày (kiểu "giảm cân bằng chuối"), dễ thiếu đạm, mất cơ và tăng cân lại.
+- Ăn chuối sấy giòn thay trái cây tươi.
+- Không tính chuối vào tổng calo trong ngày.
+- Bỏ tập luyện, chỉ trông vào ăn uống.
+
+## Kết luận
+
+Vậy **1 quả chuối bao nhiêu calo**? Chỉ khoảng **90–110 kcal (ước tính)** cho một quả chuối tiêu cỡ vừa, và ít hơn với chuối tây, chuối cau. Chuối không gây béo, ngược lại còn là món ăn phụ rất tốt cho người tập luyện nếu bạn ăn **1–2 quả mỗi ngày**, ăn vào trước hoặc sau tập, và luôn tính vào tổng calo.
+
+Giảm mỡ bền vững cần cả thực đơn đủ đạm, mức calo phù hợp và giáo án tập đúng. Nếu bạn muốn có **thực đơn và giáo án riêng** theo cơ địa của mình, hãy nhắn cho Coach Tuấn Đạt qua Zalo để được khám cơ thể và theo sát từng ngày.`,
+  },
 ].map((p, i) => ({
   id: `seed-${i + 1}`,
   seed: true,
