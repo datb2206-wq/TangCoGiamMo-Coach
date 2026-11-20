@@ -1094,6 +1094,98 @@ Vậy **1 quả chuối bao nhiêu calo**? Chỉ khoảng **90–110 kcal (ướ
 
 Giảm mỡ bền vững cần cả thực đơn đủ đạm, mức calo phù hợp và giáo án tập đúng. Nếu bạn muốn có **thực đơn và giáo án riêng** theo cơ địa của mình, hãy nhắn cho Coach Tuấn Đạt qua Zalo để được khám cơ thể và theo sát từng ngày.`,
   },
+  {
+    slug: "an-sang-gi-de-giam-can-7-thuc-don-bua-sang",
+    category: "thuc-don",
+    image: "/images/bai-viet/an-sang-gi-de-giam-can-7-thuc-don-bua-sang.jpg",
+    publishedAt: "2026-11-20T03:30:00.000Z",
+    title: "Ăn Sáng Gì Để Giảm Cân? 7 Thực Đơn Bữa Sáng Kiểu Việt No Lâu, Dễ Làm",
+    excerpt: "Ăn sáng gì để giảm cân mà vẫn no tới trưa? Công thức bữa sáng giảm mỡ, 7 thực đơn bữa sáng kiểu Việt dễ làm kèm calo ước tính và những món nên hạn chế.",
+    content: `**Ăn sáng gì để giảm cân** mà vẫn no tới trưa, không mệt, không thèm ăn vặt? Đây là câu hỏi rất nhiều người đặt ra khi bắt đầu giảm mỡ. Nhiều người chọn cách bỏ bữa sáng cho nhanh, nhưng kết quả thường là đói cồn cào, trưa ăn bù gấp đôi và tổng calo cả ngày còn cao hơn. Bài viết này giúp bạn hiểu một bữa sáng giảm cân cần có gì, gợi ý **7 thực đơn bữa sáng kiểu Việt** dễ làm, rẻ, kèm mức calo ước tính để bạn tự chọn theo lịch sinh hoạt của mình.
+
+## Có nên bỏ bữa sáng để giảm cân không?
+
+Giảm cân hay giảm mỡ, cuối cùng vẫn phụ thuộc vào **tổng calo nạp vào so với calo tiêu hao trong cả ngày**. Bỏ bữa sáng không tự đốt mỡ. Nếu bạn bỏ sáng mà trưa, chiều vẫn ăn vừa đủ thì vẫn giảm được. Nhưng với đa số người, bỏ sáng dẫn tới:
+
+- Đói nhiều vào giữa buổi, dễ uống trà sữa, ăn bánh ngọt "cho đỡ".
+- Bữa trưa ăn nhanh, ăn nhiều, nhất là cơm và đồ chiên.
+- Thiếu năng lượng nếu bạn tập vào buổi sáng hoặc làm việc nặng.
+- Khó đạt đủ lượng đạm cần cho cơ bắp trong ngày.
+
+Nếu bạn quen nhịn ăn sáng và vẫn kiểm soát được bữa trưa, không sao. Còn nếu bạn hay "ăn bù", một bữa sáng đúng cách sẽ giúp việc giảm mỡ dễ thở hơn rất nhiều.
+
+## Ăn sáng gì để giảm cân? Công thức một bữa sáng chuẩn
+
+Thay vì nhớ từng món, bạn chỉ cần nhớ công thức đơn giản sau:
+
+1. **Đạm (protein)**: trứng, sữa chua không đường, sữa tươi không đường, sữa đậu nành không đường, ức gà, thịt nạc, đậu hũ. Mục tiêu khoảng **20–30g đạm** mỗi bữa sáng.
+2. **Tinh bột vừa phải**: khoai lang, yến mạch, bánh mì (ưu tiên nguyên cám), bánh phở, bún, cơm. Khoảng 1 nắm tay.
+3. **Rau hoặc trái cây**: dưa leo, cà chua, rau sống, chuối, táo, ổi.
+4. **Ít dầu mỡ và ít đường**: hạn chế đồ chiên, nước béo, sữa đặc, nước ngọt.
+
+Với người đang giảm mỡ, bữa sáng thường nằm ở mức **khoảng 300–450 kcal (ước tính)**. Người cao lớn, tập nặng hoặc lao động chân tay có thể cần nhiều hơn.
+
+Lý do đạm quan trọng: đạm giúp no lâu hơn tinh bột và chất béo, đồng thời giúp **giữ cơ khi đang ăn thâm hụt calo**. Giữ được cơ thì dáng lên đẹp hơn, không bị "gầy mà nhão".
+
+## 7 thực đơn bữa sáng giảm cân kiểu Việt dễ làm
+
+Calo bên dưới là **mức ước tính**, thay đổi theo khẩu phần, cách chế biến và lượng dầu ăn.
+
+1. **Bánh mì trứng ít dầu + dưa leo**: 1/2 đến 1 ổ bánh mì, 2 quả trứng ốp ít dầu hoặc trứng luộc, vài lát dưa leo, cà chua. Khoảng **350–420 kcal**, gần 18g đạm. Bỏ bơ, pate và hạn chế nước sốt.
+2. **Khoai lang luộc + 2 trứng luộc + sữa chua không đường**: khoảng 200g khoai lang, 2 trứng, 1 hộp sữa chua. Khoảng **370–400 kcal**, rất no và có thể chuẩn bị từ tối hôm trước.
+3. **Yến mạch nấu sữa tươi không đường + chuối + trứng**: 40g yến mạch, 200ml sữa tươi không đường, nửa quả chuối, 1 trứng luộc. Khoảng **380–420 kcal**, hợp với người tập buổi sáng.
+4. **Bánh mì nguyên cám kẹp ức gà**: 2 lát bánh mì nguyên cám, 80–100g ức gà luộc hoặc áp chảo ít dầu, xà lách, cà chua. Khoảng **300–350 kcal**, trên 25g đạm.
+5. **Phở bò tô nhỏ**: gọi tô nhỏ, xin ít bánh, thêm rau và giá, không thêm nước béo, không ăn kèm quẩy. Khoảng **400–450 kcal**. Phở tô lớn có thể lên 550–650 kcal.
+6. **Sữa đậu nành không đường + 2 trứng + 1 quả chuối**: khoảng 300ml sữa đậu nành, 2 trứng luộc, 1 quả chuối. Khoảng **330–380 kcal**, tiện cho người đi làm sớm.
+7. **Cơm cuộn hoặc cơm nắm nhỏ + đậu hũ + trứng**: 1 chén cơm nhỏ, 100g đậu hũ luộc hoặc sốt cà ít dầu, 1 trứng. Khoảng **380–430 kcal**, hợp với người quen ăn cơm buổi sáng.
+
+Bạn có thể xoay vòng 7 thực đơn này trong tuần để không bị ngán.
+
+## Các món ăn sáng quen thuộc nên hạn chế
+
+Những món dưới đây không cấm, nhưng dễ làm bữa sáng vượt calo mà lại ít đạm:
+
+- **Xôi mặn, xôi gà, xôi lạp xưởng**: một gói có thể khoảng **500–650 kcal (ước tính)**, nhiều tinh bột và mỡ.
+- **Bánh mì pate, bánh mì thịt nguội nhiều sốt**: dễ trên 450 kcal.
+- **Cơm tấm sườn bì chả**: thường **600–750 kcal**, nhất là khi thêm mỡ hành.
+- **Bánh bao, bánh ngọt, bánh quy**: nhiều tinh bột tinh chế, nhanh đói.
+- **Cà phê sữa đá, trà sữa**: một ly có thể thêm 150–350 kcal mà không no.
+
+Nếu thèm, bạn có thể ăn **nửa phần**, thêm 1–2 quả trứng luộc và rau để cân bằng.
+
+## Mẹo chuẩn bị bữa sáng nhanh cho người bận rộn
+
+- **Luộc sẵn 6–10 quả trứng** vào cuối tuần, để tủ lạnh dùng 3–4 ngày.
+- **Hấp sẵn khoai lang** buổi tối, sáng chỉ cần hâm nóng.
+- **Yến mạch ngâm qua đêm** (overnight oats) với sữa tươi không đường, sáng lấy ra ăn ngay.
+- Mua sẵn sữa chua không đường, sữa đậu nành không đường để trong tủ lạnh.
+- Uống cà phê đen hoặc cà phê sữa ít sữa thay cho cà phê sữa đá nhiều đường.
+- Chuẩn bị hộp nhỏ mang theo nếu bạn ăn sáng ở công ty.
+
+## Ăn sáng lúc nào là tốt nhất khi tập luyện?
+
+Không có giờ "thần kỳ". Quan trọng nhất là ăn **đều đặn và phù hợp lịch của bạn**:
+
+- **Tập buổi sáng sớm**: ăn nhẹ trước tập 30–60 phút (1 quả chuối hoặc 1 lát bánh mì), sau tập ăn bữa sáng chính có đạm.
+- **Tập buổi chiều hoặc tối**: ăn sáng bình thường theo công thức ở trên.
+- **Đi làm sớm**: ưu tiên các thực đơn chuẩn bị trước như số 2, 3, 6.
+
+## Câu hỏi thường gặp về bữa sáng giảm cân
+
+**Chỉ uống cà phê đen buổi sáng có giảm cân không?** Cà phê đen gần như không có calo, nhưng không thay được một bữa sáng có đạm. Nhiều người uống cà phê đen rồi tới trưa ăn rất nhiều.
+
+**Ăn bánh mì buổi sáng có béo không?** Không, nếu bạn kiểm soát khẩu phần và nhân bánh. Nửa ổ đến 1 ổ bánh mì kèm trứng và rau vẫn phù hợp với người giảm mỡ.
+
+**Ăn sáng bằng trái cây thay cơm được không?** Trái cây có vitamin và chất xơ nhưng rất ít đạm. Nên ăn kèm trứng, sữa chua không đường hoặc sữa để no lâu hơn.
+
+**Người có bệnh dạ dày, tiểu đường nên ăn sáng thế nào?** Người có bệnh lý, đang mang thai hoặc dùng thuốc nên hỏi ý kiến bác sĩ hoặc chuyên gia dinh dưỡng trước khi thay đổi chế độ ăn.
+
+## Kết luận
+
+Vậy **ăn sáng gì để giảm cân**? Câu trả lời là một bữa sáng có **đủ đạm, tinh bột vừa phải, thêm rau hoặc trái cây và ít dầu mỡ, đường**, khoảng 300–450 kcal (ước tính) với đa số người. Bữa sáng không cần cầu kỳ hay đắt tiền: trứng, khoai lang, yến mạch, bánh mì, sữa chua là đủ để bạn no lâu, giữ cơ và giảm mỡ đều đặn. Điều quan trọng là duy trì mỗi ngày và kết hợp với tập luyện phù hợp.
+
+Nếu bạn muốn có **thực đơn và giáo án riêng** theo cân nặng, lịch làm việc và mục tiêu của mình, hãy để Coach Tuấn Đạt khám cơ thể và **thiết kế thực đơn, giáo án 3 ngày miễn phí**, theo sát bạn mỗi ngày qua Zalo.`,
+  },
 ].map((p, i) => ({
   id: `seed-${i + 1}`,
   seed: true,
