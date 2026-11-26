@@ -1471,6 +1471,128 @@ Vậy **1 ổ bánh mì bao nhiêu calo**? Một ổ bánh mì không cỡ vừa
 
 Nếu bạn muốn có **thực đơn và giáo án riêng** phù hợp với cơ thể, khẩu vị và lịch sinh hoạt của mình, hãy để Coach Tuấn Đạt khám cơ thể và **theo sát bạn mỗi ngày qua Zalo** nhé!`,
   },
+  {
+    slug: "thuc-don-tang-can-cho-nguoi-gay-tang-co-com-nha",
+    category: "thuc-don",
+    image: "/images/bai-viet/thuc-don-tang-can-cho-nguoi-gay-tang-co-com-nha.jpg",
+    publishedAt: "2026-11-26T03:30:00.000Z",
+    title: "Thực Đơn Tăng Cân Cho Người Gầy: Ăn Cơm Nhà Tăng Cơ, Không Tăng Mỡ Bụng",
+    excerpt: "Thực đơn tăng cân cho người gầy bằng món cơm nhà quen thuộc: cách tính calo, chia 5 bữa mỗi ngày, gợi ý thực đơn mẫu và mẹo tăng cân lành mạnh, ưu tiên tăng cơ.",
+    content: `**Thực đơn tăng cân cho người gầy** là điều nhiều bạn tìm kiếm khi đã "ăn mãi không mập", mặc áo rộng thùng thình, tập tạ mãi không thấy lên cơ. Nhưng tăng cân đúng cách không phải là ăn thật nhiều đồ ngọt, đồ chiên cho nhanh lên ký, vì như vậy dễ tích mỡ bụng mà cơ bắp vẫn không cải thiện. Bài viết này giúp bạn hiểu vì sao mình khó tăng cân, cách tính lượng ăn phù hợp và gợi ý **thực đơn cơm nhà** dễ nấu, giá bình dân để tăng cân theo hướng **tăng cơ, hạn chế tăng mỡ**.
+
+## Vì sao người gầy ăn nhiều vẫn không tăng cân?
+
+Phần lớn trường hợp, người gầy **nghĩ mình ăn nhiều nhưng thực tế tổng năng lượng nạp vào vẫn thấp hơn năng lượng tiêu hao**. Một vài lý do thường gặp:
+
+- **Ăn không đều**: có hôm ăn rất no, có hôm bỏ bữa sáng hoặc ăn tối qua loa, tính trung bình cả tuần vẫn thiếu.
+- **Ăn nhanh no**: dạ dày quen với khẩu phần nhỏ, ăn một chén cơm đã thấy đầy bụng.
+- **Vận động nhiều**: công việc đi lại nhiều, hay đứng, hay cử động cũng đốt khá nhiều năng lượng.
+- **Thiếu đạm**: bữa ăn chủ yếu là cơm và rau, ít thịt, cá, trứng nên cơ thể không có đủ "nguyên liệu" để xây cơ.
+- **Ngủ ít, căng thẳng**: ảnh hưởng đến cảm giác thèm ăn và quá trình phục hồi.
+
+Nếu bạn gầy đột ngột, sụt cân không rõ lý do, hay mệt mỏi, tiêu hóa kém kéo dài, hãy **đi khám bác sĩ** trước để loại trừ các vấn đề như tuyến giáp, tiêu hóa hay bệnh lý khác.
+
+## Người gầy cần ăn bao nhiêu calo mỗi ngày để tăng cân?
+
+Nguyên tắc cơ bản: muốn tăng cân, bạn cần ăn **dư một chút** so với nhu cầu hằng ngày. Để tăng cơ mà hạn chế tích mỡ, mức dư hợp lý thường là **khoảng 300–500 kcal mỗi ngày** (ước tính).
+
+Cách tính đơn giản, mang tính tham khảo:
+
+1. Lấy **cân nặng (kg) nhân 30–35** để ước tính nhu cầu duy trì. Ví dụ bạn nặng 55kg: khoảng 1.650–1.900 kcal/ngày.
+2. Cộng thêm **300–500 kcal**: mục tiêu khoảng **2.000–2.400 kcal/ngày**.
+3. Theo dõi cân nặng mỗi tuần vào cùng một thời điểm (buổi sáng, sau khi đi vệ sinh). Mức tăng **khoảng 0,25–0,5kg/tuần** là hợp lý cho đa số người.
+4. Nếu sau 2 tuần cân không nhích, tăng thêm khoảng 200 kcal/ngày. Nếu tăng quá nhanh và vòng bụng to ra rõ, giảm bớt một chút.
+
+Đây chỉ là con số ước tính. Mỗi người có chiều cao, mức vận động và cơ địa khác nhau nên cần điều chỉnh dựa trên kết quả thực tế.
+
+## Nguyên tắc xây dựng thực đơn tăng cân cho người gầy
+
+Để tăng cân "chất lượng", thực đơn nên đảm bảo các nguyên tắc sau:
+
+- **Đủ đạm**: khoảng **1,6–2g đạm/kg cân nặng/ngày**. Người 55kg cần khoảng 90–110g đạm, tương đương 3–4 bữa có thịt, cá, trứng, đậu phụ, sữa.
+- **Tinh bột là nguồn năng lượng chính**: cơm, bún, phở, khoai, yến mạch, bánh mì giúp bạn đủ năng lượng để tập và tăng cân.
+- **Chất béo tốt**: dầu ăn vừa phải, đậu phộng, mè, bơ, các loại hạt giúp tăng calo mà không làm bữa ăn quá to.
+- **Chia nhỏ 5–6 bữa**: 3 bữa chính và 2–3 bữa phụ giúp bạn ăn đủ mà không bị quá no, đầy bụng.
+- **Đủ rau và trái cây**: giúp tiêu hóa tốt, nhưng đừng ăn quá nhiều rau trước cơm vì dễ no sớm.
+
+## Thực phẩm cơm nhà giúp tăng cân, tăng cơ
+
+Bạn không cần thực phẩm đắt tiền. Những món sau đều dễ mua ở chợ:
+
+- **Đạm**: trứng gà, ức gà, đùi gà, thịt heo nạc, thịt bò, cá basa, cá nục, tôm, đậu phụ, sữa tươi, sữa chua.
+- **Tinh bột**: cơm trắng, gạo lứt, khoai lang, khoai tây, bún, phở, yến mạch, bánh mì.
+- **Chất béo tốt**: đậu phộng, mè, hạt điều, bơ, dầu ăn, cá béo.
+- **Món ăn vặt giàu calo lành mạnh**: chuối, sữa chua, bánh mì kẹp trứng, sinh tố chuối sữa, một nắm đậu phộng.
+
+Ví dụ ước tính: **1 chén cơm trắng (~150g) khoảng 190–200 kcal**, **1 quả trứng gà khoảng 70–80 kcal**, **1 hộp sữa tươi 180ml khoảng 110–130 kcal**, **1 quả chuối khoảng 90–110 kcal**, **30g đậu phộng rang khoảng 170 kcal**.
+
+## Thực đơn tăng cân cho người gầy mẫu 1 ngày (khoảng 2.300 kcal)
+
+Thực đơn dưới đây dành cho người khoảng 55kg, có tập luyện. Lượng calo chỉ là **ước tính**:
+
+**Bữa sáng (khoảng 550 kcal)**
+- 1 ổ bánh mì kẹp 2 quả trứng ốp la và dưa leo.
+- 1 hộp sữa tươi ít đường.
+
+**Bữa phụ sáng (khoảng 250 kcal)**
+- 1 hộp sữa chua và 1 quả chuối.
+
+**Bữa trưa (khoảng 700 kcal)**
+- 2 chén cơm trắng.
+- Thịt heo nạc kho trứng (khoảng 120g thịt, 1 quả trứng).
+- Canh bí đỏ và một đĩa rau luộc.
+
+**Bữa phụ chiều, trước tập (khoảng 300 kcal)**
+- Sinh tố chuối với sữa tươi và 1 muỗng yến mạch, hoặc 1 củ khoai lang và 1 hộp sữa.
+
+**Bữa tối (khoảng 500 kcal)**
+- 1,5 chén cơm.
+- Cá basa kho hoặc ức gà xào sả ớt (khoảng 150g).
+- Rau cải xào tỏi, canh rau ngót.
+
+Nếu thấy khó ăn hết, bạn có thể thêm **1 nắm đậu phộng hoặc 1 ly sữa trước khi ngủ** để bù calo thay vì cố ăn thêm cơm.
+
+## Gợi ý thay đổi món trong tuần để không ngán
+
+Ăn một thực đơn cố định sẽ rất nhanh ngán. Hãy xoay vòng theo nhóm:
+
+1. **Đạm bữa chính**: thịt kho, gà luộc, cá kho, bò xào, đậu phụ sốt cà chua, tôm rim.
+2. **Tinh bột**: thay cơm bằng bún, phở, mì trứng hoặc khoai vài bữa trong tuần.
+3. **Bữa phụ**: sữa chua với chuối, bánh mì trứng, sinh tố bơ sữa, khoai lang luộc kèm sữa.
+4. **Canh và rau**: đổi theo mùa để vừa ngon vừa tiết kiệm.
+
+Bạn có thể nấu sẵn đồ kho cho 2 ngày và luộc sẵn trứng để tiết kiệm thời gian.
+
+## Những sai lầm khi tăng cân khiến tăng mỡ bụng
+
+- **Ăn nhiều đồ ngọt, nước ngọt, trà sữa** để tăng calo nhanh: dễ tăng mỡ, ít giúp tăng cơ.
+- **Ăn đồ chiên rán quá thường xuyên**: nhiều calo nhưng ít dinh dưỡng, dễ khó tiêu.
+- **Không tập luyện sức mạnh**: dư calo mà không tập tạ, cơ thể sẽ ưu tiên tích mỡ.
+- **Tăng cân quá nhanh**: tăng 1–2kg/tuần thường là mỡ và nước nhiều hơn là cơ.
+- **Bỏ bữa rồi ăn bù**: làm tổng lượng ăn cả tuần vẫn thiếu.
+
+Để tăng cơ, nên kết hợp thực đơn với **tập tạ hoặc bài tập sức mạnh 3–4 buổi/tuần**, tập trung các bài như squat, hít đất, chèo tạ, đẩy ngực, và tăng dần mức tạ theo thời gian.
+
+## Câu hỏi thường gặp về thực đơn tăng cân
+
+**Người gầy có nên uống sữa tăng cân không?**
+Sữa tăng cân có thể giúp bổ sung calo tiện lợi, nhưng không bắt buộc. Bạn có thể dùng sữa tươi, sữa chua, sinh tố chuối tự làm. Nên đọc thành phần, tránh loại quá nhiều đường.
+
+**Ăn trước khi ngủ có giúp tăng cân không?**
+Một bữa phụ nhẹ như ly sữa hoặc sữa chua trước khi ngủ giúp bạn tăng tổng calo trong ngày. Điều quan trọng là tổng lượng ăn cả ngày, không phải giờ ăn.
+
+**Bao lâu thì thấy kết quả?**
+Nếu ăn đủ và tập đều, thường sau khoảng **4–8 tuần** bạn sẽ thấy cân nặng và vóc dáng thay đổi. Tốc độ mỗi người khác nhau.
+
+**Người có bệnh dạ dày hay đang mang thai thì sao?**
+Người có bệnh lý tiêu hóa, bệnh mạn tính, đang mang thai hoặc có chấn thương nên hỏi ý kiến bác sĩ hoặc chuyên gia dinh dưỡng trước khi thay đổi chế độ ăn và tập luyện.
+
+## Kết luận
+
+**Thực đơn tăng cân cho người gầy** hiệu quả không cần cầu kỳ: ăn dư khoảng 300–500 kcal mỗi ngày, đủ đạm, chia 5–6 bữa và kết hợp tập sức mạnh đều đặn. Những món cơm nhà quen thuộc như thịt kho, cá kho, trứng, sữa, chuối đã đủ để bạn tăng cân lành mạnh, ưu tiên tăng cơ thay vì tăng mỡ bụng.
+
+Nếu bạn muốn có **thực đơn và giáo án riêng** phù hợp với cơ thể, khẩu vị và lịch sinh hoạt của mình, hãy để Coach Tuấn Đạt khám cơ thể và **theo sát bạn mỗi ngày qua Zalo** nhé!`,
+  },
 ].map((p, i) => ({
   id: `seed-${i + 1}`,
   seed: true,
